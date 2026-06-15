@@ -27,8 +27,11 @@ Guardian (label truth/approval state). Voice captures expression preferences.
 Ask the operator, one cluster at a time, and write confirmed answers into the named files:
 
 1. **Identity** → `OPERATOR-TRUTHS.md`: name/handle to use, role, and what they build.
-2. **Ventures & clients** → `OPERATOR-TRUTHS.md`: current ventures or client lanes (names only; details
-   live in each project folder, not root).
+2. **Ventures & clients** → `OPERATOR-TRUTHS.md`: capture each venture/client lane as a name (and a one-
+   line intent). Root records only the lane. The full **venture harness** — the venture's own memory,
+   routing, connectivity, governance, and stage spine — is installed into the venture's folder by the
+   agent when the venture is created, via `routes/project-scaffold.md`. Do not put venture working data
+   in root.
 3. **Standards & non-negotiables** → `OPERATOR-TRUTHS.md`: quality bars and hard rules.
 4. **Boundaries** → `OPERATOR-TRUTHS.md` + `_connectivity/`: do-not-touch zones, live-system limits.
 5. **Voice** → `OPERATOR-VOICE.md`: cadence, words that build/erode trust, how to be challenged.

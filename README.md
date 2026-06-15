@@ -7,12 +7,34 @@ This is the **Community Edition** — a clean, distributable starter with no ope
 projects. **New here? Start with `GUIDE.md`** (plain-language walkthrough). See `DISTRIBUTION-README.md`
 for the quickstart and `ROLE-GLOSSARY.md` for the agent crew.
 
+## Features
+
+- **Tiered runtime boot** — compact kernels first; deep sources load only when a route needs them.
+- **Request routing** — every request classified to the smallest matching route card before work.
+- **Agent crew (17 functional roles)** — contract + doctrine + four-stage spine each; renameable.
+- **Mandatory risk gate (Sentinel)** — fires on all non-trivial work before movement.
+- **Live-system & credential boundaries (Warden)** — stops and asks before deploys, money, or secrets.
+- **Truth & proof governance (Steward)** — refuses unsupported claims; proof before claims.
+- **Operator Canon** — your truths, voice, judgment, load, and approval standards drive behavior.
+- **Guided onboarding** — interactive `install.py` (no agent) or the agent-driven route.
+- **Venture harness** — full portable project structure installed per venture at creation by the agent.
+- **Memory discipline** — relevance, exact record, findability, log pruning.
+- **Deterministic gates** — self-tests + role-registry validation, local and in CI.
+- **Decision packets** — options + tradeoffs + recommended default when human judgment is needed.
+- **Connectivity templates** — env vault map + SOPS/age restore scripts; no secrets in the repo.
+- **Handoff templates & logs**, **architecture generators**, optional **commit-time gate**.
+- **MIT-licensed GitHub template** — rename, rebrand, make it yours.
+
+Full walkthrough in `GUIDE.md`.
+
 ## Start Here
 
 1. Use this template (or clone the repo).
-2. Open the repo with Claude Code, Codex, or another coding agent and load Runtime Tier 0 (below).
-3. On a fresh install the system routes you to **operator onboarding**
-   (`_routing/runtime/routes/operator-onboarding.md`) to capture who you are before substantial work.
+2. Onboard: run `python install.py` (no agent needed), **or** open the repo with Claude Code / Codex,
+   load Runtime Tier 0 (below), and the empty operator layer routes you to
+   `_routing/runtime/routes/operator-onboarding.md`.
+3. Create your first venture by asking the agent to scaffold it — it installs the full venture harness
+   (`_routing/runtime/routes/project-scaffold.md`).
 
 For an agent, begin with:
 

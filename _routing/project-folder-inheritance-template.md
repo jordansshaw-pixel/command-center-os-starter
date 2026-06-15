@@ -693,7 +693,7 @@ Before marking project folder inheritance complete, Marshal MUST verify:
 - Project inheritance MUST NOT duplicate root law.
 - Project inheritance MUST NOT activate a placeholder, dormant, provisional, historical, or undecided folder by scaffolding it as active without a decision.
 - Project inheritance MUST NOT treat project-local connectivity pointers as permission to act.
-- Project inheritance MUST NOT import old ExampleLegacy, `CLIENTS/...`, `ExampleOps/...`, `C:\Dev`, archive, or external implementation assumptions as active truth without source authority.
+- Project inheritance MUST NOT import legacy, archive, or external implementation assumptions as active truth without source authority.
 - Project inheritance MUST NOT ask the operator to design routine folder function before the OS proposes the inheritance pattern.
 
 ## Inputs

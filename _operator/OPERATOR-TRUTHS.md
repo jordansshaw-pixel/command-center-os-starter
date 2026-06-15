@@ -73,10 +73,11 @@ These universal system invariants ship with the OS. **Add operator-specific trut
 | What is true at root may not be true for a given project unless inheritance or local truth is explicit. | Source-confirmed | this file |
 | A project dropped into a command center must carry its own findings, planning, memory, governance, connectivity, and stage truth so it can run accordingly. Root stores the operating rule, not the project's operational information. | Source-confirmed | this file |
 | AI must not turn the operator's judgment, client reality, or project identity into generic output. | Source-confirmed | `_governance/brand-guardian.md` |
-| _(Add your own: who you are and your role.)_ | _(unset)_ | onboarding |
-| _(Add your own: what you build / your ventures.)_ | _(unset)_ | onboarding |
-| _(Add your own: your standards and non-negotiables.)_ | _(unset)_ | onboarding |
-| _(Add your own: your hard boundaries / do-not-touch zones.)_ | _(unset)_ | onboarding |
+
+## Operator-Specific Truths
+
+_Not yet captured. Run `python install.py` (or follow the operator-onboarding route) to record who you
+are, what you build, your standards, and your boundaries. Each becomes a labeled truth here._
 
 ## Truth Scope Rule
 

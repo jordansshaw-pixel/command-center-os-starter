@@ -18,6 +18,28 @@ Think of it as: **an operating manual your AI assistant boots from.**
 
 ---
 
+## Features at a glance
+
+- **Tiered runtime boot** — loads compact kernels first (low context cost); deep sources load only when a route needs them.
+- **Request routing** — every request is classified to the smallest matching route card before work starts.
+- **Agent crew (17 roles)** — functional roles (Conductor, Sentinel, Steward, Keeper, Builder, Warden, and more), each with a contract, doctrine, and a four-stage spine. Fully renameable.
+- **Mandatory risk gate** — Sentinel scores risk and fires on all non-trivial work before anything moves.
+- **Live-system & credential boundaries** — Warden stops before touching websites, deploys, money, or secrets and asks for approval.
+- **Truth & proof governance** — Steward / Brand Guardian refuses unsupported claims (proof before claims).
+- **Operator Canon** — your truths, voice, judgment, load, and approval standards drive the system.
+- **Guided onboarding** — interactive `install.py` (no agent required) or the agent-driven route fills your profile.
+- **Venture harness** — each venture gets a full, portable project structure installed at creation by the agent.
+- **Memory discipline** — relevance checks, exact-record archiving, findability indexing, and log pruning.
+- **Deterministic gates** — engine self-tests + role-registry validation, runnable locally and in GitHub CI.
+- **Decision packets** — when human judgment is needed you get options, tradeoffs, and a recommended default — not a vague question.
+- **Connectivity templates** — env vault map + SOPS/age restore scripts; the repo never stores secrets.
+- **Handoff templates & logs** — clean resume/transfer between sessions or owners.
+- **Architecture generators** — render an architecture/interface view from a source-of-truth map.
+- **Optional commit gate** — a Git pre-commit hook can run the gates before each commit.
+- **MIT-licensed GitHub template** — “Use this template,” rename the crew, rebrand, make it yours.
+
+---
+
 ## 2. What you need
 
 - A GitHub account.
@@ -32,25 +54,26 @@ That's it. No servers, no database, no paid services to start.
 
 1. On the GitHub page for this template, click **“Use this template” → “Create a new repository.”**
    Name it whatever you like and make it private if you prefer.
-2. Open your new repository with your AI agent (clone it locally, or open it in the agent's IDE).
-3. Tell the agent:
-   > “Load Runtime Tier 0, then start.”
+2. Clone your new repository to your computer.
+3. Onboard — pick **one**:
+   - **No agent needed:** run `python install.py` in the repo folder and answer the questions. It writes
+     your profile directly.
+   - **With your agent:** open the repo and tell it “Load Runtime Tier 0, then start.” Because your
+     operator profile is empty, it routes you straight into the same onboarding interview.
 
-   It will read the seven boot files (listed in `README.md`) and, because your operator profile is
-   still empty, it will route you straight into **onboarding**.
-
-That's the whole install. The next step — onboarding — is where it becomes *yours*.
+That's the whole install. The onboarding step — next — is where it becomes *yours*.
 
 ---
 
 ## 4. First boot: the Truth interview
 
-On a fresh install, `_operator/OPERATOR-TRUTHS.md` is an empty scaffold. The agent notices this and
-follows `_routing/runtime/routes/operator-onboarding.md` — a short interview that asks you, one group
-at a time:
+Onboarding (via `python install.py` or the agent's `operator-onboarding` route) is a short interview
+that asks you, one group at a time:
 
 1. **Identity** — who you are and what you build.
-2. **Ventures / clients** — the lanes you work in (names only; details live in each project folder).
+2. **Ventures / clients** — the lanes you work in. You give the **name** (and a one-line intent). You do
+   *not* describe the whole venture here — when you actually create a venture, the agent installs a full
+   **venture harness** into its folder (see §7). Root just remembers the lane.
 3. **Standards** — your quality bars and non-negotiables.
 4. **Boundaries** — what the system must never touch without asking (live systems, money, credentials).
 5. **Voice** — how you write and speak, and how you like to be challenged.
@@ -102,14 +125,39 @@ confirm the engine and its role registry are intact. They run automatically on G
 
 ---
 
-## 7. Add your own project
+## 7. Add a venture (the venture harness)
 
-Create a folder at the top level of the repo (next to `_agents`, `_routing`, etc.) and let the agent
-scaffold it. Keep each project's real working details **inside that project's folder** — its own memory,
-notes, and boundaries. The root stays portable: if you move a project out, it still works on its own.
+A **venture** is any project, client, or work lane. You don't hand-build its folders — you ask your
+agent, e.g.:
 
-There's a worked example in `_examples/sample-project/` showing the shape (a four-stage spine:
-intake → judgment → output → handoff). Run a route on it first to see the flow.
+> “Scaffold a venture called Acme.”
+
+The agent installs the **venture harness** into a new top-level folder: a complete, self-contained
+project structure that inherits root law but keeps its own working truth. It contains:
+
+```text
+Acme/
+  CLAUDE.md          # the venture's identity + pointers back to root
+  CONTEXT.md         # current state
+  ROUTING.md         # how work routes inside this venture
+  _governance/       # local truth/proof boundaries
+  _memory/           # the venture's memory + decision log
+  _connectivity/     # local live-system pointers (never secrets)
+  references/
+  stages/            # 01_intake -> 02_judgment -> 03_output -> 04_handoff
+```
+
+Why this matters:
+
+- **Portable.** Each venture carries everything it needs to run. Move the folder out of the repo and it
+  still works — root is not a dependency, just an inheritance source.
+- **Isolated.** One venture's facts never leak into another. What's true for Acme isn't assumed true
+  elsewhere unless you say so.
+- **Consistent.** Every venture gets the same intake → judgment → output → handoff spine, so any agent
+  can pick up work in any venture the same way.
+
+There's a worked example in `_examples/sample-project/` showing the shape. Run a route on it first to
+see the flow before creating a real venture.
 
 ---
 
