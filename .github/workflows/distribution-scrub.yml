@@ -1,0 +1,30 @@
+name: Distribution Scrub (maintainer)
+
+# Maintainer-only guardrail for the canonical template repo. It enforces that no
+# operator data, venture/client name, private path, or third-party IP role name
+# reappears. It is intentionally NOT part of the end-user gate suite
+# (run_gates.py) and the job below no-ops on template instances / forks, so
+# members never get false-positive failures on their own legitimate content.
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  scrub:
+    runs-on: ubuntu-latest
+    if: github.repository == 'jordansshaw-pixel/command-center-os-starter'
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run distribution scrub gate
+        run: python _routing/distribution_scrub_gate.py

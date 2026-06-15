@@ -8,7 +8,9 @@ How this Community Edition was produced from a private workspace, and what is gu
 - **No ventures or clients:** all project/venture folders and names were excluded or replaced with neutral placeholders.
 - **No secrets or private infra:** no credentials, tokens, private repo URLs, vault contents, or machine paths.
 - **No third-party IP role names:** the agent crew uses functional names (see `ROLE-GLOSSARY.md`).
-- **Enforced:** `_routing/distribution_scrub_gate.py` fails CI if any forbidden token reappears.
+- **Enforced upstream:** `_routing/distribution_scrub_gate.py` runs on the canonical repo only
+  (`.github/workflows/distribution-scrub.yml`) and fails if any forbidden token, IP role name, or local
+  machine path reappears. It is deliberately excluded from the end-user gate suite.
 
 ## Disposition by area
 
@@ -32,7 +34,7 @@ How this Community Edition was produced from a private workspace, and what is gu
 ## Added for distribution
 
 - `_routing/runtime/routes/operator-onboarding.md` (+ ROUTE-INDEX entry)
-- `_routing/distribution_scrub_gate.py` (wired into `run_gates.py` and CI)
+- `_routing/distribution_scrub_gate.py` + `.github/workflows/distribution-scrub.yml` (maintainer-only; not in the end-user suite)
 - `LICENSE` (MIT), `DISTRIBUTION-README.md`, `ROLE-GLOSSARY.md`, `CONTRIBUTING.md`, this manifest
 - `_examples/sample-project/` (neutral worked example)
 
@@ -44,5 +46,6 @@ retained. See `ROLE-GLOSSARY.md`.
 
 ## Verification
 
-`python _routing/run_gates.py` runs seven deterministic checks (gate self-tests, role-registry
-validation, and the distribution scrub scan). All must pass.
+`python _routing/run_gates.py` runs six deterministic checks (gate self-tests + role-registry
+validation). Maintainers additionally run `python _routing/distribution_scrub_gate.py`, which also runs
+in CI on the canonical repo only. All must pass.

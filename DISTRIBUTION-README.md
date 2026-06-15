@@ -17,8 +17,8 @@ it yours during a guided first-run onboarding.
 - **Governance** (`_governance/`) — truth, proof, refusal, correction authority.
 - **Connectivity gates** (`_connectivity/`) — live-system and credential boundaries; secrets stay in a
   separate private vault you create.
-- **Deterministic gates** (`_routing/*.py`, `run_gates.py`) — self-tests, role-registry validation, and
-  a distribution scrub gate, all enforced in CI (`.github/workflows/atx-gates.yml`).
+- **Deterministic gates** (`_routing/*.py`, `run_gates.py`) — gate self-tests and role-registry
+  validation, enforced in CI (`.github/workflows/atx-gates.yml`).
 
 ## Quickstart
 
@@ -39,8 +39,9 @@ it yours during a guided first-run onboarding.
 python _routing/run_gates.py
 ```
 
-All seven checks should pass, including `distribution_scrub_gate.py` (which fails if operator data or
-IP role names ever reappear).
+All six checks should pass. (A separate maintainer-only scrub gate,
+`_routing/distribution_scrub_gate.py`, guards the upstream template against reintroduced operator data;
+it is intentionally not part of this suite, so it never false-positives on your own content.)
 
 Optionally enable the commit-time gate (per clone):
 

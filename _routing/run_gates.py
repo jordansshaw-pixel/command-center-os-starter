@@ -25,7 +25,6 @@ import atx_hook_runner  # noqa: E402
 import atx_live_system_gate  # noqa: E402
 import atx_log_pruning_gate  # noqa: E402
 import atx_multi_agent_gate  # noqa: E402
-import distribution_scrub_gate  # noqa: E402
 
 
 CheckFn = Callable[[list[str]], int]
@@ -38,7 +37,6 @@ CHECKS: tuple[tuple[str, CheckFn, list[str]], ...] = (
     ("atx_multi_agent_gate.py --validate-registry", atx_multi_agent_gate.main, ["--validate-registry"]),
     ("atx_live_system_gate.py --self-test", atx_live_system_gate.main, ["--self-test"]),
     ("atx_log_pruning_gate.py --self-test", atx_log_pruning_gate.main, ["--self-test"]),
-    ("distribution_scrub_gate.py --scan", distribution_scrub_gate.main, []),
 )
 
 
@@ -79,7 +77,7 @@ def run_checks() -> int:
 
 def run_self_test() -> int:
     assert_supported_python()
-    if len(CHECKS) != 7:
+    if len(CHECKS) != 6:
         print("FAIL gate runner self-test: unexpected check count", file=sys.stderr)
         return 1
     names = [name for name, _check_fn, _args in CHECKS]

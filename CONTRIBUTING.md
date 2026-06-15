@@ -5,7 +5,8 @@ Thanks for improving Command Center OS.
 ## Ground rules
 
 1. **Never commit personal data or secrets.** No real names, client/venture names, credentials, API
-   tokens, private repo URLs, or machine-specific paths. The distribution scrub gate enforces this.
+   tokens, private repo URLs, or machine-specific paths. On the canonical template repo a maintainer-only
+   scrub gate (`.github/workflows/distribution-scrub.yml`) enforces this; it does not run on forks.
 2. **Keep the engine deterministic.** Changes to `_routing/*.py` must keep `python _routing/run_gates.py`
    green, including role-registry validation.
 3. **Preserve the role contract shape.** Each `_agents/<role>/` keeps its `CONTRACT.md`, `doctrine/`,
@@ -18,8 +19,9 @@ Thanks for improving Command Center OS.
 python _routing/run_gates.py
 ```
 
-CI runs the same suite on every push and pull request (`.github/workflows/atx-gates.yml`). PRs that add
-forbidden tokens or break a gate will fail.
+CI runs this suite on every push and pull request (`.github/workflows/atx-gates.yml`); PRs that break a
+gate will fail. On the canonical repo, the maintainer scrub workflow additionally fails any PR that
+reintroduces a forbidden token.
 
 ## Adding a project profile or env contract
 
