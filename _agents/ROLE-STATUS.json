@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "status": "Root role status registry",
+  "date": "2026-06-06",
+  "owner": "Librarian for findability; Conductor for routing enforcement",
+  "queuedBeforeUseRule": "Queued roles, agents, integrations, generators, projects, lanes, or lenses may be shown as queued, but MUST NOT be invoked, assigned ownership, routed execution, used as review gates, or treated as available before required contracts and structure exist.",
+  "activeRoleThreshold": [
+    "folder exists",
+    "compact doctrine file exists",
+    "CONTRACT.md exists",
+    "required stage contracts exist",
+    "handoff path exists",
+    "ROLE-INDEX.md marks it active"
+  ],
+  "roles": [
+    {
+      "title": "Steward",
+      "description": "Operator-truth inheritance, proof, refusal, Brand Guardian.",
+      "color": "pink",
+      "truthStatus": "active-root-operating-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/steward",
+      "contractPath": "_agents/steward/CONTRACT.md",
+      "stagePaths": [
+        "_agents/steward/stages/01_intake/CONTRACT.md",
+        "_agents/steward/stages/02_judgment/CONTRACT.md",
+        "_agents/steward/stages/03_output/CONTRACT.md",
+        "_agents/steward/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial contract plus stages",
+      "runtimeStatus": "contracted the OS role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/steward/doctrine/truth-proof-refusal.md"
+      ]
+    },
+    {
+      "title": "Conductor",
+      "description": "Routing, sequence, handoff discipline, operator load.",
+      "color": "cyan",
+      "truthStatus": "active-root-operating-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/conductor",
+      "contractPath": "_agents/conductor/CONTRACT.md",
+      "stagePaths": [
+        "_agents/conductor/stages/01_intake/CONTRACT.md",
+        "_agents/conductor/stages/02_judgment/CONTRACT.md",
+        "_agents/conductor/stages/03_output/CONTRACT.md",
+        "_agents/conductor/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial contract plus stages",
+      "runtimeStatus": "contracted the OS role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/conductor/doctrine/routing-sequence-handoff.md"
+      ]
+    },
+    {
+      "title": "Keeper",
+      "description": "Memory relevance and continuity.",
+      "color": "pink",
+      "truthStatus": "active-root-operating-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/keeper",
+      "contractPath": "_agents/keeper/CONTRACT.md",
+      "stagePaths": [
+        "_agents/keeper/stages/01_intake/CONTRACT.md",
+        "_agents/keeper/stages/02_judgment/CONTRACT.md",
+        "_agents/keeper/stages/03_output/CONTRACT.md",
+        "_agents/keeper/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial contract plus stages",
+      "runtimeStatus": "contracted the OS role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/keeper/doctrine/memory-relevance.md"
+      ]
+    },
+    {
+      "title": "Recorder",
+      "description": "Exact record and provenance.",
+      "color": "pink",
+      "truthStatus": "active-root-operating-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/recorder",
+      "contractPath": "_agents/recorder/CONTRACT.md",
+      "stagePaths": [
+        "_agents/recorder/stages/01_intake/CONTRACT.md",
+        "_agents/recorder/stages/02_judgment/CONTRACT.md",
+        "_agents/recorder/stages/03_output/CONTRACT.md",
+        "_agents/recorder/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial contract plus stages",
+      "runtimeStatus": "contracted the OS role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/recorder/doctrine/exact-record.md"
+      ]
+    },
+    {
+      "title": "Librarian",
+      "description": "Findability, indexes, placement.",
+      "color": "green",
+      "truthStatus": "active-root-operating-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/librarian",
+      "contractPath": "_agents/librarian/CONTRACT.md",
+      "stagePaths": [
+        "_agents/librarian/stages/01_intake/CONTRACT.md",
+        "_agents/librarian/stages/02_judgment/CONTRACT.md",
+        "_agents/librarian/stages/03_output/CONTRACT.md",
+        "_agents/librarian/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial contract plus stages",
+      "runtimeStatus": "contracted the OS role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/librarian/doctrine/findability-indexing.md"
+      ]
+    },
+    {
+      "title": "Analyst",
+      "description": "Evidence architecture, source confidence, research clarity, and assumption separation.",
+      "color": "red",
+      "truthStatus": "active-specialist-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/analyst",
+      "contractPath": "_agents/analyst/CONTRACT.md",
+      "stagePaths": [
+        "_agents/analyst/stages/01_intake/CONTRACT.md",
+        "_agents/analyst/stages/02_judgment/CONTRACT.md",
+        "_agents/analyst/stages/03_output/CONTRACT.md",
+        "_agents/analyst/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial specialist contract plus stages",
+      "runtimeStatus": "contracted the OS specialist role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/analyst/doctrine/evidence-source-confidence.md"
+      ]
+    },
+    {
+      "title": "Pathfinder",
+      "description": "Boundary architecture, operating cover, safe movement envelopes, and protected-space design.",
+      "color": "red",
+      "truthStatus": "active-specialist-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/pathfinder",
+      "contractPath": "_agents/pathfinder/CONTRACT.md",
+      "stagePaths": [
+        "_agents/pathfinder/stages/01_intake/CONTRACT.md",
+        "_agents/pathfinder/stages/02_judgment/CONTRACT.md",
+        "_agents/pathfinder/stages/03_output/CONTRACT.md",
+        "_agents/pathfinder/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial specialist contract plus stages",
+      "runtimeStatus": "contracted the OS specialist role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/pathfinder/doctrine/boundary-envelope.md"
+      ]
+    },
+    {
+      "title": "Theorist",
+      "description": "Model coherence, theory, abstraction risk, and impractical-elegance review.",
+      "color": "violet",
+      "truthStatus": "active-specialist-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/theorist",
+      "contractPath": "_agents/theorist/CONTRACT.md",
+      "stagePaths": [
+        "_agents/theorist/stages/01_intake/CONTRACT.md",
+        "_agents/theorist/stages/02_judgment/CONTRACT.md",
+        "_agents/theorist/stages/03_output/CONTRACT.md",
+        "_agents/theorist/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial specialist contract plus stages",
+      "runtimeStatus": "contracted the OS specialist role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/theorist/doctrine/model-coherence.md"
+      ]
+    },
+    {
+      "title": "Builder",
+      "description": "Build, prototype, tooling, workflow, automation, and implementation after routed review.",
+      "color": "red",
+      "truthStatus": "active-specialist-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/builder",
+      "contractPath": "_agents/builder/CONTRACT.md",
+      "stagePaths": [
+        "_agents/builder/stages/01_intake/CONTRACT.md",
+        "_agents/builder/stages/02_judgment/CONTRACT.md",
+        "_agents/builder/stages/03_output/CONTRACT.md",
+        "_agents/builder/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial specialist contract plus stages",
+      "runtimeStatus": "contracted the OS specialist role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/builder/doctrine/build-after-review.md"
+      ]
+    },
+    {
+      "title": "Mechanic",
+      "description": "Repair, diagnosis, failure analysis, and process-correction after breakdowns.",
+      "color": "red",
+      "truthStatus": "active-specialist-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/mechanic",
+      "contractPath": "_agents/mechanic/CONTRACT.md",
+      "stagePaths": [
+        "_agents/mechanic/stages/01_intake/CONTRACT.md",
+        "_agents/mechanic/stages/02_judgment/CONTRACT.md",
+        "_agents/mechanic/stages/03_output/CONTRACT.md",
+        "_agents/mechanic/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial specialist contract plus stages",
+      "runtimeStatus": "contracted the OS specialist role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/mechanic/doctrine/process-repair.md"
+      ]
+    },
+    {
+      "title": "Marshal",
+      "description": "Protocol, rules-as-written enforcement, checklist compliance, and deterministic contract review.",
+      "color": "amber",
+      "truthStatus": "active-specialist-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/marshal",
+      "contractPath": "_agents/marshal/CONTRACT.md",
+      "stagePaths": [
+        "_agents/marshal/stages/01_intake/CONTRACT.md",
+        "_agents/marshal/stages/02_judgment/CONTRACT.md",
+        "_agents/marshal/stages/03_output/CONTRACT.md",
+        "_agents/marshal/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial specialist contract plus stages",
+      "runtimeStatus": "contracted the OS specialist role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/marshal/doctrine/rules-as-written.md"
+      ]
+    },
+    {
+      "title": "Liaison",
+      "description": "Human/client intake, messenger signal, and close-to-the-ground context capture.",
+      "color": "amber",
+      "truthStatus": "active-specialist-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/liaison",
+      "contractPath": "_agents/liaison/CONTRACT.md",
+      "stagePaths": [
+        "_agents/liaison/stages/01_intake/CONTRACT.md",
+        "_agents/liaison/stages/02_judgment/CONTRACT.md",
+        "_agents/liaison/stages/03_output/CONTRACT.md",
+        "_agents/liaison/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial specialist contract plus stages",
+      "runtimeStatus": "contracted the OS specialist role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/liaison/doctrine/human-client-intake.md"
+      ]
+    },
+    {
+      "title": "Scout",
+      "description": "Field context, terrain, reconnaissance, and environmental truth.",
+      "color": "green",
+      "truthStatus": "active-specialist-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/scout",
+      "contractPath": "_agents/scout/CONTRACT.md",
+      "stagePaths": [
+        "_agents/scout/stages/01_intake/CONTRACT.md",
+        "_agents/scout/stages/02_judgment/CONTRACT.md",
+        "_agents/scout/stages/03_output/CONTRACT.md",
+        "_agents/scout/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial specialist contract plus stages",
+      "runtimeStatus": "contracted the OS specialist role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/scout/doctrine/field-context.md"
+      ]
+    },
+    {
+      "title": "Sentinel",
+      "description": "Risk scoring and tactical coherence.",
+      "color": "amber",
+      "truthStatus": "active-root-operating-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/sentinel",
+      "contractPath": "_agents/sentinel/CONTRACT.md",
+      "stagePaths": [
+        "_agents/sentinel/stages/01_intake/CONTRACT.md",
+        "_agents/sentinel/stages/02_judgment/CONTRACT.md",
+        "_agents/sentinel/stages/03_output/CONTRACT.md",
+        "_agents/sentinel/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial contract plus stages",
+      "runtimeStatus": "contracted the OS role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/sentinel/doctrine/risk-gates.md"
+      ]
+    },
+    {
+      "title": "Signal",
+      "description": "Signal packets and runner visibility.",
+      "color": "cyan",
+      "truthStatus": "active-specialist-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/signal",
+      "contractPath": "_agents/signal/CONTRACT.md",
+      "stagePaths": [
+        "_agents/signal/stages/01_intake/CONTRACT.md",
+        "_agents/signal/stages/02_judgment/CONTRACT.md",
+        "_agents/signal/stages/03_output/CONTRACT.md",
+        "_agents/signal/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial contract plus stages",
+      "runtimeStatus": "contracted the OS role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/signal/doctrine/signal-packets.md"
+      ]
+    },
+    {
+      "title": "Warden",
+      "description": "Hard boundaries and live-system stops.",
+      "color": "red",
+      "truthStatus": "active-root-operating-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/warden",
+      "contractPath": "_agents/warden/CONTRACT.md",
+      "stagePaths": [
+        "_agents/warden/stages/01_intake/CONTRACT.md",
+        "_agents/warden/stages/02_judgment/CONTRACT.md",
+        "_agents/warden/stages/03_output/CONTRACT.md",
+        "_agents/warden/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial contract plus stages",
+      "runtimeStatus": "contracted the OS role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/warden/doctrine/live-system-hard-stops.md"
+      ]
+    },
+    {
+      "title": "Voice",
+      "description": "Operator voice and tone under truth authority.",
+      "color": "violet",
+      "truthStatus": "active-root-operating-role",
+      "sourcePath": "_agents/ROLE-INDEX.md",
+      "folderPath": "_agents/voice",
+      "contractPath": "_agents/voice/CONTRACT.md",
+      "stagePaths": [
+        "_agents/voice/stages/01_intake/CONTRACT.md",
+        "_agents/voice/stages/02_judgment/CONTRACT.md",
+        "_agents/voice/stages/03_output/CONTRACT.md",
+        "_agents/voice/stages/04_handoff/CONTRACT.md"
+      ],
+      "contractStatus": "initial contract plus stages",
+      "runtimeStatus": "contracted the OS role; not autonomous software",
+      "invocationStatus": "invokable-as-role",
+      "doctrinePaths": [
+        "_agents/voice/doctrine/voice-after-truth.md"
+      ]
+    }
+  ]
+}

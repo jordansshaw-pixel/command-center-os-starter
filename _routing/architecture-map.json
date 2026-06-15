@@ -1,0 +1,601 @@
+{
+  "schemaVersion": 1,
+  "status": "Root architecture interface source",
+  "date": "2026-06-06",
+  "title": "Command Center OS Neural Interface",
+  "subtitle": "Current generated interface for the root operating system: Operator Canon, intake, routing, memory, agents, build-time review, connectivity, output, and project workspace wiring.",
+  "humanInterfaceTruth": "Human-facing architecture interfaces are truth surfaces. They must be updateable from a named source of truth at inception and during execution, not hand-maintained as disconnected artifacts.",
+  "architectureBlueprintPath": "_routing/atx-command-architecture-blueprint.md",
+  "commandSurfaceAcceptancePath": "_routing/command-surface-acceptance-standard.md",
+  "generatorContractPath": "_routing/generator-artifact-contract.md",
+  "commandSurfaceStatus": "Accepted as a source-backed review artifact; not accepted as final command surface, live dashboard, or operational control system.",
+  "outputPath": "_output/2026-06-06-atx-command-center-neural-interface.html",
+  "generatorPath": "_routing/generate-architecture-wireframe.js",
+  "legend": [
+    {
+      "label": "Core routing / output",
+      "color": "cyan"
+    },
+    {
+      "label": "Wired / usable",
+      "color": "green"
+    },
+    {
+      "label": "Project-local files / lanes",
+      "color": "blue"
+    },
+    {
+      "label": "Governance / memory",
+      "color": "pink"
+    },
+    {
+      "label": "Missing / undecided",
+      "color": "red"
+    }
+  ],
+  "rootSpine": [
+    {
+      "title": "Command Center OS",
+      "description": "the operator's root agentic operating system.",
+      "items": [
+        "Truth before action",
+        "Routing before production",
+        "Memory before rediscovery"
+      ],
+      "tag": "root",
+      "color": "cyan",
+      "strong": true
+    },
+    {
+      "title": "CLAUDE.md",
+      "description": "Layer 0 identity and operating law.",
+      "tag": "identity",
+      "color": "violet"
+    },
+    {
+      "title": "_operator/",
+      "description": "Operator Canon: the operator's truth, voice, judgment, load, and approval standards.",
+      "tag": "operator",
+      "color": "green"
+    },
+    {
+      "title": "_intake/",
+      "description": "Single operator-facing drop lane at _intake/drop/ before the OS classification.",
+      "tag": "drop zone",
+      "color": "green"
+    },
+    {
+      "title": "ROUTING.md + _routing/",
+      "description": "Layer 1 destination logic, command architecture blueprint, proactive action, decision packets, and architecture source map.",
+      "tag": "router",
+      "color": "cyan"
+    },
+    {
+      "title": "_connectivity/",
+      "description": "Layer 3 connectivity registry, permission classes, live-system stops, and tool boundary rules.",
+      "tag": "boundary",
+      "color": "green"
+    },
+    {
+      "title": "CONTEXT.md",
+      "description": "Current root state and recovery instructions.",
+      "tag": "state",
+      "color": "pink"
+    },
+    {
+      "title": "_output/",
+      "description": "Local reviewable output lane inside the same workspace.",
+      "tag": "layer 4",
+      "color": "amber"
+    }
+  ],
+  "sourceSystems": [
+    {
+      "title": "_operator/",
+      "description": "the operator's operator truths, voice, judgment, load, and approval canon.",
+      "tag": "canon",
+      "color": "green"
+    },
+    {
+      "title": "_intake/",
+      "description": "Single drop lane plus internal classification outcomes for Librarian.",
+      "tag": "intake",
+      "color": "green"
+    },
+    {
+      "title": "Deterministic Standard",
+      "description": "MUST/MUST NOT language, acceptance tests, and anti-drift rules.",
+      "tag": "contract",
+      "color": "cyan"
+    },
+    {
+      "title": "_governance/",
+      "description": "Brand Guardian, proof, refusal, correction, and movement authority.",
+      "tag": "oath",
+      "color": "pink"
+    },
+    {
+      "title": "_memory/",
+      "description": "Decision log, memory router, source improvement.",
+      "tag": "memory",
+      "color": "pink"
+    },
+    {
+      "title": "_agents/",
+      "description": "Role contracts, stage lanes, run log, test standard, and build-time review invocation.",
+      "tag": "roles",
+      "color": "cyan"
+    },
+    {
+      "title": "Build-Time Review",
+      "description": "Deterministic architecture review lane served by Conductor, Analyst, Pathfinder, Sentinel, Signal, and Builder after authorization.",
+      "tag": "review layer",
+      "color": "cyan"
+    },
+    {
+      "title": "Low-Risk Fast Lane",
+      "description": "Reversible internal movement standard for risk 0-1 work that can skip full build-time review without bypassing truth.",
+      "tag": "fast lane",
+      "color": "amber"
+    },
+    {
+      "title": "Command Surface Acceptance",
+      "description": "Acceptance tests for generated operator-facing architecture views so visuals do not create new truth.",
+      "tag": "review artifact",
+      "color": "violet"
+    },
+    {
+      "title": "_handoffs/",
+      "description": "Handoff packets and future-session continuity.",
+      "tag": "handoff",
+      "color": "green"
+    },
+    {
+      "title": "_connectivity/",
+      "description": "Connectivity registry, tool permission classes, and live-system risk rules.",
+      "tag": "wired",
+      "color": "green"
+    },
+    {
+      "title": "_output/",
+      "description": "Evaluation snapshots and generated review outputs, not source law.",
+      "tag": "review",
+      "color": "amber"
+    }
+  ],
+  "workflow": [
+    "Intake",
+    "Fast-Lane Triage",
+    "Memory Check",
+    "Build-Time Review",
+    "Risk Score",
+    "Signal Packet",
+    "Route / Output / Handoff"
+  ],
+  "viglore": {
+    "componentBreakdown": [
+      {
+        "component": "Root spine",
+        "behavior": "Holds identity, context, routing entrypoint, source folders, hook lane, output lane, and generated-interface source path.",
+        "bucket": "Infrastructure",
+        "estimate": "AI: minimal interpretation during review. Everything else: root files, folders, JSON, scripts, hooks, and saved artifacts."
+      },
+      {
+        "component": "Operator Canon and truth gate",
+        "behavior": "Carries the operator's operator truths, judgment, load, approval, and the Brand Guardian proof/refusal/correction standard.",
+        "bucket": "Orchestration",
+        "estimate": "AI: judgment when applying proof, refusal, or caveats to ambiguous work. Everything else: source-confirmed canon, status labels, and gate rules."
+      },
+      {
+        "component": "Routing, contracts, and authority triad",
+        "behavior": "Decides where work belongs, what must load, which authority owns movement, and how unresolved work becomes a packet or handoff.",
+        "bucket": "Orchestration",
+        "estimate": "AI: low to moderate when edge cases require judgment. Everything else: load order, MUST/MUST NOT contracts, destination maps, and authority gates."
+      },
+      {
+        "component": "Agent/stage and build-time review layer",
+        "behavior": "Gives roles contract-backed stages and invokes active review lenses before durable builds or generated artifacts move.",
+        "bucket": "Orchestration",
+        "estimate": "AI: moderate in judgment stages. Everything else: role folders, stage contracts, review standards, risk/signal packets, and handoff rules."
+      },
+      {
+        "component": "Memory, logs, and source improvement",
+        "behavior": "Preserves decisions, run records, source indexes, recovery paths, and corrections that should survive chat context loss.",
+        "bucket": "Orchestration",
+        "estimate": "AI: moderate for deciding what matters. Everything else: decision logs, run logs, memory router, source-improvement rules, and timestamp standards."
+      },
+      {
+        "component": "Intake, handoff, and live-system boundaries",
+        "behavior": "Gives unsorted input a drop lane, routes handoffs, and blocks connectivity/live-system movement until owner, permission, risk, and approval are explicit.",
+        "bucket": "Orchestration",
+        "estimate": "AI: low to moderate for classification and boundary exceptions. Everything else: intake contracts, handoff packets, connectivity registry, permission classes, and stop rules."
+      },
+      {
+        "component": "Neural interface and output lane",
+        "behavior": "Renders source-backed review artifacts from _routing/architecture-map.json and keeps operator-facing architecture displays tied to truth sources.",
+        "bucket": "Infrastructure",
+        "estimate": "AI: low. Mostly JSON source, generator script, deterministic validation, and generated HTML/Markdown outputs."
+      }
+    ],
+    "honestRatio": [
+      {
+        "category": "Infrastructure",
+        "share": "43%"
+      },
+      {
+        "category": "Orchestration",
+        "share": "50%"
+      },
+      {
+        "category": "AI",
+        "share": "7%"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "ExampleAgency",
+      "description": "Wired project workspace with local governance, memory, connectivity, routing, and deterministic stage contracts.",
+      "tag": "wired",
+      "color": "green",
+      "items": [
+        {
+          "label": "CLAUDE.md",
+          "state": "project"
+        },
+        {
+          "label": "CONTEXT.md",
+          "state": "project"
+        },
+        {
+          "label": "ROUTING.md",
+          "state": "project"
+        },
+        {
+          "label": "references/",
+          "state": "project"
+        },
+        {
+          "label": "setup/",
+          "state": "project"
+        },
+        {
+          "label": "stages/",
+          "state": "project"
+        },
+        {
+          "label": "_memory/",
+          "state": "project"
+        },
+        {
+          "label": "_governance/",
+          "state": "project"
+        },
+        {
+          "label": "_connectivity/",
+          "state": "project"
+        },
+        {
+          "label": "_handoffs/",
+          "state": "missing"
+        }
+      ]
+    },
+    {
+      "title": "ExampleWeb",
+      "description": "Wired client workspace with local governance, memory, connectivity, routing, deterministic stage contracts, and design-process lane.",
+      "tag": "wired",
+      "color": "green",
+      "items": [
+        {
+          "label": "CLAUDE.md",
+          "state": "project"
+        },
+        {
+          "label": "CONTEXT.md",
+          "state": "project"
+        },
+        {
+          "label": "ROUTING.md",
+          "state": "project"
+        },
+        {
+          "label": "references/",
+          "state": "project"
+        },
+        {
+          "label": "setup/",
+          "state": "project"
+        },
+        {
+          "label": "stages/",
+          "state": "project"
+        },
+        {
+          "label": "design-process/",
+          "state": "project"
+        },
+        {
+          "label": "_memory/",
+          "state": "project"
+        },
+        {
+          "label": "_governance/",
+          "state": "project"
+        },
+        {
+          "label": "_connectivity/",
+          "state": "project"
+        },
+        {
+          "label": "_handoffs/",
+          "state": "missing"
+        }
+      ]
+    },
+    {
+      "title": "ExampleVideo",
+      "description": "Approved placeholder folder; empty and not scaffolded.",
+      "tag": "placeholder",
+      "color": "amber",
+      "items": [
+        {
+          "label": "CLAUDE.md",
+          "state": "placeholder"
+        },
+        {
+          "label": "CONTEXT.md",
+          "state": "placeholder"
+        },
+        {
+          "label": "ROUTING.md",
+          "state": "placeholder"
+        },
+        {
+          "label": "stages/",
+          "state": "placeholder"
+        }
+      ]
+    },
+    {
+      "title": "ExampleOps",
+      "description": "Wired org/workspace container for migrated ExampleLegacy AI Pro material, including legacy self-client lane.",
+      "tag": "wired",
+      "color": "green",
+      "items": [
+        {
+          "label": "CLAUDE.md",
+          "state": "project"
+        },
+        {
+          "label": "CONTEXT.md",
+          "state": "project"
+        },
+        {
+          "label": "ROUTING.md",
+          "state": "project"
+        },
+        {
+          "label": "_memory/",
+          "state": "project"
+        },
+        {
+          "label": "client-workspace/",
+          "state": "project"
+        },
+        {
+          "label": "ExampleOps-* lanes",
+          "state": "project"
+        },
+        {
+          "label": "review gates",
+          "state": "ok"
+        },
+        {
+          "label": "public use",
+          "state": "missing"
+        }
+      ]
+    },
+    {
+      "title": "ExampleNotes",
+      "description": "Wired your community resource and Clief Notes workspace for ICM references, competition packages, and resource work.",
+      "tag": "wired",
+      "color": "green",
+      "items": [
+        {
+          "label": "CLAUDE.md",
+          "state": "project"
+        },
+        {
+          "label": "CONTEXT.md",
+          "state": "project"
+        },
+        {
+          "label": "ROUTING.md",
+          "state": "project"
+        },
+        {
+          "label": "_memory/",
+          "state": "project"
+        },
+        {
+          "label": "Week 4 Comp/",
+          "state": "project"
+        },
+        {
+          "label": "TERM-LIBRARY/",
+          "state": "project"
+        },
+        {
+          "label": "references/",
+          "state": "project"
+        },
+        {
+          "label": "resource lane",
+          "state": "ok"
+        }
+      ]
+    },
+    {
+      "title": "ExampleService",
+      "description": "Dormant/provisional opportunity workspace for migrated agentic call-center pilot material.",
+      "tag": "provisional",
+      "color": "amber",
+      "items": [
+        {
+          "label": "CLAUDE.md",
+          "state": "project"
+        },
+        {
+          "label": "CONTEXT.md",
+          "state": "project"
+        },
+        {
+          "label": "ROUTING.md",
+          "state": "project"
+        },
+        {
+          "label": "_memory/",
+          "state": "project"
+        },
+        {
+          "label": "projects/",
+          "state": "project"
+        },
+        {
+          "label": "stages/",
+          "state": "project"
+        },
+        {
+          "label": "not greenlit",
+          "state": "missing"
+        },
+        {
+          "label": "activation gate",
+          "state": "ok"
+        }
+      ]
+    },
+    {
+      "title": "ExampleFactory",
+      "description": "Wired method-engine workspace for factory stages, shops, skill specs, plugin references, and governed build handoffs.",
+      "tag": "method engine",
+      "color": "cyan",
+      "items": [
+        {
+          "label": "CLAUDE.md",
+          "state": "project"
+        },
+        {
+          "label": "CONTEXT.md",
+          "state": "project"
+        },
+        {
+          "label": "ROUTING.md",
+          "state": "project"
+        },
+        {
+          "label": "_memory/",
+          "state": "project"
+        },
+        {
+          "label": "stages/",
+          "state": "project"
+        },
+        {
+          "label": "shops/",
+          "state": "project"
+        },
+        {
+          "label": "skill-specs/",
+          "state": "project"
+        },
+        {
+          "label": "runtime output",
+          "state": "missing"
+        }
+      ]
+    }
+  ],
+  "truthmodeComparison": {
+    "title": "Truthmode Cockpit Comparison",
+    "source": "Based on _governance/collideascopeos-atx-comparative-map.md and the observed CollideascopeOS image.",
+    "judgment": "CollideascopeOS is ahead as a revenue execution cockpit. the OS is ahead as a truth, governance, memory, routing, and boundary operating system.",
+    "operatingLine": "the OS has the deeper law. CollideascopeOS has the cleaner cockpit. the OS needs the cockpit without losing the law.",
+    "comparisonRows": [
+      {
+        "dimension": "Truth in data",
+        "collideascope": "Revenue-facing lanes: client folders, CAC, monthly reports, SEO, paid media, CRM, content pipeline, firm finances.",
+        "atx": "Provenance-facing controls: source labels, approval state, memory router, decision logs, permission classes, project locality.",
+        "assessment": "CollideascopeOS surfaces operating metrics better. the OS protects data truth and source boundaries better."
+      },
+      {
+        "dimension": "Truth in meaning",
+        "collideascope": "Brand architecture, doctrine, audience language, diagnosis before tactics, and strategic drift audit.",
+        "atx": "Operator Canon, Brand Guardian oath, proof/refusal/correction, ICM layers, and meaning-before-output rules.",
+        "assessment": "the OS is stronger on meaning authority. CollideascopeOS is stronger at putting meaning directly into production lanes."
+      },
+      {
+        "dimension": "Efficiency",
+        "collideascope": "Faster visible routing for common client and firm production work.",
+        "atx": "Faster recovery, safer routing, stronger context preservation, and better prevention of wrong work.",
+        "assessment": "CollideascopeOS wins speed to production. the OS wins speed to durable correctness."
+      },
+      {
+        "dimension": "Operational capability",
+        "collideascope": "Visible specialists and MCP integrations create a practical revenue-ops cockpit.",
+        "atx": "Root law, role contracts, staged handoffs, build-time review, memory, and connectivity boundaries create a safer command OS.",
+        "assessment": "CollideascopeOS is more production-complete today. the OS is more extensible and governable."
+      }
+    ],
+    "performanceGaps": [
+      {
+        "gap": "Cockpit legibility",
+        "state": "pending",
+        "nextAction": "Add source-driven visual sections for truth, routing, project status, execution lanes, and blocked states."
+      },
+      {
+        "gap": "Revenue execution lanes",
+        "state": "pending",
+        "nextAction": "Expose only status-level client and venture lanes until project-local scaffolds prove active truth."
+      },
+      {
+        "gap": "Production specialist coverage",
+        "state": "pending",
+        "nextAction": "Prove active specialist handoffs under real work before adding more named roles."
+      },
+      {
+        "gap": "Tool throughput",
+        "state": "blocked",
+        "nextAction": "Authorize project-local read, draft, or live lanes through connectivity registries before deeper integration."
+      },
+      {
+        "gap": "Low-risk fast lane",
+        "state": "active",
+        "nextAction": "Use _routing/low-risk-fast-lane-standard.md for reversible internal work with risk score 0-1."
+      },
+      {
+        "gap": "Project-local runtime truth",
+        "state": "active",
+        "nextAction": "Finish local governance, memory, connectivity, and handoff scaffolds for active projects before broader claims."
+      }
+    ]
+  },
+  "notes": [
+    "Active project and resource folders inherit root governance, memory, routing, connectivity, and agent contracts according to lane type.",
+    "Root _connectivity/ is wired; ExampleAgency and ExampleWeb carry project-local connectivity boundaries, while ExampleOps and ExampleService require review before live-system use.",
+    "The architecture interface is now generated as the Command Center OS Neural Interface from the source map.",
+    "The underlying command architecture blueprint lives at _routing/atx-command-architecture-blueprint.md; the generated interface is a review artifact, not the architecture itself.",
+    "Command-surface acceptance lives at _routing/command-surface-acceptance-standard.md; current status is review artifact only.",
+    "Future queued roles, lanes, integrations, and lenses may be shown only as queued; they are not usable until their required contracts, structure, handoff paths, and active status exist.",
+    "Projects and resource lanes inherit Operator Canon only through explicit scope and local truth boundaries.",
+    "Unsorted non-sensitive files enter through _intake/drop/ before Librarian classifies them.",
+    "Project outputs stay in local stage output folders unless root routing places them in _output/.",
+    "ExampleFactory is an engine, not a project container; runtime outputs must route to a selected destination workspace.",
+    "ExampleService is wired for future value but remains dormant until the operator greenlights it.",
+    "Low-risk fast lane is available only for reversible internal work with clear source, clear destination, and Sentinel risk score 0-1.",
+    "ExampleVideo is approved as an empty placeholder and must not be scaffolded without a new the operator decision."
+  ],
+  "agentsSourcePath": "_agents/ROLE-STATUS.json"
+}

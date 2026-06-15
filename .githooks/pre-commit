@@ -1,0 +1,88 @@
+#!/bin/sh
+set -eu
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+
+# This repo is the OS root when CLAUDE.md and _routing are present at the top level.
+if [ -f "$REPO_ROOT/CLAUDE.md" ] && [ -d "$REPO_ROOT/_routing" ]; then
+  OS_ROOT="$REPO_ROOT"
+  OS_PATHSPEC="."
+else
+  exit 0
+fi
+
+STAGED_FILES="$(git -C "$REPO_ROOT" diff --cached --name-only -- "$OS_PATHSPEC" || true)"
+
+if [ -z "$STAGED_FILES" ]; then
+  exit 0
+fi
+
+cd "$OS_ROOT"
+
+FIND_PYTHON="$OS_ROOT/_routing/ci/find-python.sh"
+if [ ! -f "$FIND_PYTHON" ]; then
+  echo "Pre-commit blocked the commit:" >&2
+  echo "  status: block" >&2
+  echo "  reason: missing interpreter resolver at _routing/ci/find-python.sh." >&2
+  echo "  next: restore the gate runner files and retry." >&2
+  echo "Bypass only for genuine emergencies: git commit --no-verify" >&2
+  exit 2
+fi
+
+. "$FIND_PYTHON"
+OS_PYTHON="$(find_atx_python)" || {
+  echo "Pre-commit blocked the commit:" >&2
+  echo "  status: block" >&2
+  echo "  reason: Python >= 3.10 was not found on PATH." >&2
+  echo "  next: install Python >= 3.10 or fix PATH, then retry." >&2
+  echo "Bypass only for genuine emergencies: git commit --no-verify" >&2
+  exit 2
+}
+
+HOOK_STATUS=0
+HOOK_OUTPUT="$("$OS_PYTHON" "_routing/atx_hook_runner.py" \
+  --event source-change \
+  --request "git pre-commit source change" \
+  --scope "root git pre-commit" \
+  --memory-impact check \
+  --format json)" || HOOK_STATUS=$?
+
+if [ "$HOOK_STATUS" -ne 0 ]; then
+  echo "Pre-commit blocked the commit:" >&2
+  echo "$HOOK_OUTPUT" | "$OS_PYTHON" -c "import json, sys; data=json.load(sys.stdin); result=data.get('hook_result', {}); print('  status:', result.get('status')); print('  reason:', result.get('reason')); print('  next:', result.get('nextAction'))" >&2 || {
+    echo "  status: block" >&2
+    echo "  reason: hook runner exited non-zero before returning parseable JSON." >&2
+    echo "  next: inspect _routing/atx_hook_runner.py and retry after correction." >&2
+  }
+  echo "Bypass only for genuine emergencies: git commit --no-verify" >&2
+  exit "$HOOK_STATUS"
+fi
+
+# Log pruning enforcement: scan only OS-owned logs staged in this commit.
+# Warn at trigger (non-blocking); hard-block at ceiling. Source rule:
+# _memory/runtime/LOG-PRUNING-RULE.md. Owner: Recorder.
+PRUNE_ARGS=""
+OLD_IFS="$IFS"
+IFS='
+'
+for f in $STAGED_FILES; do
+  [ -z "$f" ] && continue
+  rel="${f#"$OS_PATHSPEC"/}"
+  PRUNE_ARGS="$PRUNE_ARGS --only $rel"
+done
+IFS="$OLD_IFS"
+
+if [ -n "$PRUNE_ARGS" ] && [ -f "$OS_ROOT/_routing/atx_log_pruning_gate.py" ]; then
+  PRUNE_STATUS=0
+  PRUNE_OUTPUT="$("$OS_PYTHON" "_routing/atx_log_pruning_gate.py" --scan $PRUNE_ARGS --format json)" || PRUNE_STATUS=$?
+  if [ "$PRUNE_STATUS" -ne 0 ]; then
+    echo "Pre-commit blocked the commit:" >&2
+    echo "$PRUNE_OUTPUT" | "$OS_PYTHON" -c "import json, sys; data=json.load(sys.stdin); print('  status:', data.get('status')); print('  reason:', data.get('next'))" >&2 || {
+      echo "  status: block" >&2
+      echo "  reason: log-pruning gate exited non-zero before returning parseable JSON." >&2
+      echo "  next: route the over-ceiling log to Recorder for an archive-plus-index prune." >&2
+    }
+    echo "Bypass only for genuine emergencies: git commit --no-verify" >&2
+    exit "$PRUNE_STATUS"
+  fi
+fi

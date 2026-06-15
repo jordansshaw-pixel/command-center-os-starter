@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "status": "Public-safe agent and review interface source",
+  "date": "2026-06-06",
+  "title": "Agent Review Neural Interface",
+  "subtitle": "A source-backed view of a governed agent operating layer: source systems, agent roles, review gates, risk signals, and handoff flow.",
+  "audience": "Public technical showcase",
+  "publicSafety": {
+    "scope": "Layer 3 source systems and agent/review architecture only.",
+    "mustNotShow": [
+      "private identity details",
+      "foundation layer",
+      "private doctrine",
+      "internal comparison artifacts",
+      "private operating lanes",
+      "client details",
+      "live-system access",
+      "credentials",
+      "private paths"
+    ],
+    "artifactStatus": "Static public-facing review artifact; not a live dashboard or control system."
+  },
+  "outputPath": "_output/atx-agent-review-neural-interface/index.html",
+  "readmePath": "_output/atx-agent-review-neural-interface/README.md",
+  "generatorPath": "_routing/generate-agent-review-interface.js",
+  "sourceMapPath": "_routing/agent-review-interface-map.json",
+  "sourceSystems": [
+    {
+      "title": "Role Registry",
+      "description": "Maintains which agents exist, whether they are usable, and which contract backs each role.",
+      "type": "Registry",
+      "status": "source-backed",
+      "checks": ["role status", "contract path", "stage path", "invocation status"]
+    },
+    {
+      "title": "Stage Contracts",
+      "description": "Defines how work enters, gets judged, produces output, and hands off to the next owner.",
+      "type": "Contract layer",
+      "status": "source-backed",
+      "checks": ["intake", "judgment", "output", "handoff"]
+    },
+    {
+      "title": "Build-Time Review Standard",
+      "description": "Routes substantial build work through architecture, evidence, boundary, model, risk, and signal checks before execution.",
+      "type": "Review rule",
+      "status": "active",
+      "checks": ["trigger", "review lenses", "authorization", "stop condition"]
+    },
+    {
+      "title": "Risk Standard",
+      "description": "Scores work before movement and names the failure mode, review gate, and stop condition.",
+      "type": "Risk gate",
+      "status": "active",
+      "checks": ["truth risk", "boundary risk", "reversibility", "operator load"]
+    },
+    {
+      "title": "Signal Standard",
+      "description": "Packages state so work can move between agents, stages, and sessions without losing context.",
+      "type": "Routing signal",
+      "status": "active",
+      "checks": ["active agent", "stage", "risk", "status", "next action"]
+    },
+    {
+      "title": "Boundary Rules",
+      "description": "Blocks unsafe movement around live systems, credentials, permissions, and external commitments.",
+      "type": "Safety gate",
+      "status": "active",
+      "checks": ["permission", "owner", "approval", "do-not-touch zones"]
+    },
+    {
+      "title": "Memory And Handoff Logs",
+      "description": "Preserves decisions, run records, source updates, and next-owner packets across sessions.",
+      "type": "Continuity layer",
+      "status": "active",
+      "checks": ["decision", "record", "index", "handoff"]
+    },
+    {
+      "title": "Generator Contract",
+      "description": "Keeps public artifacts subordinate to source maps and prevents the visual surface from becoming the source of truth.",
+      "type": "Artifact control",
+      "status": "active",
+      "checks": ["source map", "generator", "output", "drift check"]
+    }
+  ],
+  "agentGroups": [
+    {
+      "title": "Core Operating Agents",
+      "description": "The agents that hold routing, proof, memory, signal, boundary, and expression responsibilities.",
+      "agents": [
+        {
+          "title": "Truth Gate Agent",
+          "description": "Checks whether claims are supported, uncertain, or blocked before movement.",
+          "status": "contracted role",
+          "stageModel": "four-stage lane",
+          "accent": "pink"
+        },
+        {
+          "title": "Routing Agent",
+          "description": "Determines destination, sequence, owner, review gate, and handoff path.",
+          "status": "contracted role",
+          "stageModel": "four-stage lane",
+          "accent": "cyan"
+        },
+        {
+          "title": "Memory Judgment Agent",
+          "description": "Decides what prior context matters and what must persist after the run.",
+          "status": "contracted role",
+          "stageModel": "four-stage lane",
+          "accent": "pink"
+        },
+        {
+          "title": "Record Agent",
+          "description": "Keeps exact record, provenance, timestamps, and source traceability.",
+          "status": "contracted role",
+          "stageModel": "four-stage lane",
+          "accent": "pink"
+        },
+        {
+          "title": "Index Agent",
+          "description": "Makes sources, decisions, outputs, and handoffs findable later.",
+          "status": "contracted role",
+          "stageModel": "four-stage lane",
+          "accent": "green"
+        },
+        {
+          "title": "Risk Agent",
+          "description": "Scores risk and names the main failure mode before work moves.",
+          "status": "contracted role",
+          "stageModel": "four-stage lane",
+          "accent": "amber"
+        },
+        {
+          "title": "Signal Agent",
+          "description": "Packages routing, risk, state, audience, and next action into a portable packet.",
+          "status": "contracted role",
+          "stageModel": "four-stage lane",
+          "accent": "cyan"
+        },
+        {
+          "title": "Boundary Agent",
+          "description": "Stops unsafe movement around live systems, credentials, and permissions.",
+          "status": "contracted role",
+          "stageModel": "four-stage lane",
+          "accent": "red"
+        },
+        {
+          "title": "Voice Agent",
+          "description": "Adapts expression only after source, proof, and audience are clear.",
+          "status": "contracted role",
+          "stageModel": "four-stage lane",
+          "accent": "violet"
+        }
+      ]
+    },
+    {
+      "title": "Review And Specialist Agents",
+      "description": "The review layer that checks evidence, boundaries, model quality, build readiness, repair needs, protocol compliance, intake context, and field reality.",
+      "agents": [
+        {
+          "title": "Evidence Agent",
+          "description": "Separates what is known, assumed, missing, and source-backed.",
+          "status": "contracted specialist",
+          "stageModel": "four-stage lane",
+          "accent": "red"
+        },
+        {
+          "title": "Boundary Architecture Agent",
+          "description": "Defines safe movement envelopes and what must not be crossed.",
+          "status": "contracted specialist",
+          "stageModel": "four-stage lane",
+          "accent": "red"
+        },
+        {
+          "title": "Model Coherence Agent",
+          "description": "Checks whether the underlying abstraction is coherent, practical, and not overfit.",
+          "status": "contracted specialist",
+          "stageModel": "four-stage lane",
+          "accent": "violet"
+        },
+        {
+          "title": "Build Agent",
+          "description": "Executes implementation only after routing and review authorize movement.",
+          "status": "contracted specialist",
+          "stageModel": "four-stage lane",
+          "accent": "red"
+        },
+        {
+          "title": "Repair Agent",
+          "description": "Diagnoses breakdowns, repeated failures, and process corrections.",
+          "status": "contracted specialist",
+          "stageModel": "four-stage lane",
+          "accent": "red"
+        },
+        {
+          "title": "Protocol Agent",
+          "description": "Checks deterministic rules, acceptance tests, and rules-as-written compliance.",
+          "status": "contracted specialist",
+          "stageModel": "four-stage lane",
+          "accent": "amber"
+        },
+        {
+          "title": "Intake Signal Agent",
+          "description": "Captures human context, request shape, and close-to-ground signal.",
+          "status": "contracted specialist",
+          "stageModel": "four-stage lane",
+          "accent": "amber"
+        },
+        {
+          "title": "Field Context Agent",
+          "description": "Checks terrain, environmental reality, and practical operating context.",
+          "status": "contracted specialist",
+          "stageModel": "four-stage lane",
+          "accent": "green"
+        }
+      ]
+    }
+  ],
+  "stageSpine": [
+    {
+      "title": "01 Intake",
+      "description": "Receive work, load context, define scope, and identify source requirements."
+    },
+    {
+      "title": "02 Judgment",
+      "description": "Apply role authority, constraints, checks, and failure conditions."
+    },
+    {
+      "title": "03 Output",
+      "description": "Produce the agent-specific packet, review finding, artifact, or route."
+    },
+    {
+      "title": "04 Handoff",
+      "description": "Move work to the next owner, stage, memory destination, or approval gate."
+    }
+  ],
+  "reviewFlow": [
+    "Request enters",
+    "Scope is classified",
+    "Memory is checked",
+    "Evidence is inspected",
+    "Boundaries are tested",
+    "Model is challenged",
+    "Risk is scored",
+    "Signal is packaged",
+    "Build moves or stops",
+    "Handoff is recorded"
+  ],
+  "reviewGates": [
+    {
+      "title": "Evidence Gate",
+      "description": "Blocks confident movement when source support is missing."
+    },
+    {
+      "title": "Boundary Gate",
+      "description": "Blocks movement that would imply live access, credentials, or external commitments."
+    },
+    {
+      "title": "Model Gate",
+      "description": "Challenges elegant but impractical abstractions before they become system law."
+    },
+    {
+      "title": "Risk Gate",
+      "description": "Names the score, failure mode, review gate, and stop condition."
+    },
+    {
+      "title": "Signal Gate",
+      "description": "Makes the current state portable enough for the next role or session."
+    },
+    {
+      "title": "Build Authorization Gate",
+      "description": "Only allows implementation after routing and review permit movement."
+    }
+  ],
+  "publicNotes": [
+    "This is a static architecture showcase, not a live dashboard.",
+    "Agent cards describe contracted roles and review responsibilities, not autonomous production bots.",
+    "No client lanes, private operating status, credentials, or live-system access are shown.",
+    "The visual layer is generated from a source map so the artifact can be refreshed without hand-editing the HTML."
+  ]
+}

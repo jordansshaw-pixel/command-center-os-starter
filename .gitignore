@@ -1,0 +1,39 @@
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
+
+# JavaScript/runtime artifacts
+node_modules/
+dist/
+
+# Local credentials and environment files
+.env
+.env.*
+*.local.env
+*.env.local
+*.vars
+.dev.vars
+*.dev.vars
+cloudflare.env
+!.env.example
+
+# Project-local secret folders
+**/.local/
+
+# Local intake artifacts (drop zone binaries, etc.)
+_intake/drop/Inbox/*
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# Local diagnostics
+_diagnostics/
+
+# Local OS artifacts
+.DS_Store
+
+# Wrangler build artifacts
+.wrangler/
+
+# Migration scripts (build-time only; not part of the distributed OS)
+_migration_*.py
