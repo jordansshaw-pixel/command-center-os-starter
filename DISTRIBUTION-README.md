@@ -7,6 +7,8 @@ moves into production.
 This is a clean, distributable starter: **no operator data, no live projects, no secrets.** You make
 it yours during a guided first-run onboarding.
 
+> **New here?** Read **`GUIDE.md`** — a plain-language walkthrough from install to daily use.
+
 ## What you get
 
 - **A crew of functional agent roles** (`_agents/`) with contracts, doctrine, and a four-stage spine.

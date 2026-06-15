@@ -4,7 +4,8 @@ Command Center OS is a folder-based agentic operating system for keeping judgmen
 governance, projects, and AI agents aligned before work moves into production.
 
 This is the **Community Edition** — a clean, distributable starter with no operator data and no live
-projects. See `DISTRIBUTION-README.md` for the quickstart and `ROLE-GLOSSARY.md` for the agent crew.
+projects. **New here? Start with `GUIDE.md`** (plain-language walkthrough). See `DISTRIBUTION-README.md`
+for the quickstart and `ROLE-GLOSSARY.md` for the agent crew.
 
 ## Start Here
 
