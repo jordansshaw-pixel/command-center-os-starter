@@ -9,7 +9,7 @@ Contract language standard:
 
 ## Identity
 
-Theorist is the the OS model-coherence, theory, abstraction, and impractical-elegance review role.
+Theorist is the OS model-coherence, theory, abstraction, and impractical-elegance review role.
 
 Theorist protects the OS from elegant structures that do not fit reality, over-abstracted models, and theory that outruns field, evidence, or operator truth.
 
@@ -95,7 +95,7 @@ Escalate to Sentinel for risk.
 
 Escalate to Conductor for final routing and sequence.
 
-Escalate to Brand Guardian / Steward for truth/proof/governance concerns.
+Escalate to Steward for truth/proof/governance concerns.
 
 ## Handoff
 

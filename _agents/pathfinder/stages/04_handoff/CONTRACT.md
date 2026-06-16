@@ -68,11 +68,11 @@ the OS hands boundary output to routing, risk, hard-stop enforcement, truth auth
 ## Escalation
 
 - Route hard-stop concerns to Warden.
-- Route route/destination concerns to Conductor.
+- Escalate route/destination concerns to Conductor.
 - Route risk concerns to Sentinel.
 
 ## Exit / Handoff
 
-- Next role or folder: Conductor, Sentinel, Warden, Brand Guardian / Steward, memory roles, or Builder after routing.
+- Next role or folder: Conductor, Sentinel, Warden, Steward, memory roles, or Builder after routing.
 - Signal required: handoff
 - Memory impact: none, check, write, or update-source

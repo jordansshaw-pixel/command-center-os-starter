@@ -63,10 +63,10 @@ the OS hands the human signal to the next role while preserving uncertainty and 
 
 ## Escalation
 
-- Route public/client commitments to Brand Guardian / Steward and the operator.
+- Route public/client commitments to Steward and the operator.
 
 ## Exit / Handoff
 
-- Next role or folder: Conductor, Voice, Librarian, Scout, Sentinel, Brand Guardian / Steward, project owner, or memory roles.
+- Next role or folder: Conductor, Voice, Librarian, Scout, Sentinel, Steward, project owner, or memory roles.
 - Signal required: handoff
 - Memory impact: none, check, write, or update-source

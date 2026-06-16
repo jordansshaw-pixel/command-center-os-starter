@@ -110,7 +110,7 @@
     },
     {
       "title": "_governance/",
-      "description": "Brand Guardian, proof, refusal, correction, and movement authority.",
+      "description": "Steward, proof, refusal, correction, and movement authority.",
       "tag": "oath",
       "color": "pink"
     },
@@ -182,7 +182,7 @@
       },
       {
         "component": "Operator Canon and truth gate",
-        "behavior": "Carries the operator's operator truths, judgment, load, approval, and the Brand Guardian proof/refusal/correction standard.",
+        "behavior": "Carries the operator's operator truths, judgment, load, approval, and the Steward proof/refusal/correction standard.",
         "bucket": "Orchestration",
         "estimate": "AI: judgment when applying proof, refusal, or caveats to ambiguous work. Everything else: source-confirmed canon, status labels, and gate rules."
       },
@@ -533,7 +533,7 @@
       {
         "dimension": "Truth in meaning",
         "collideascope": "Brand architecture, doctrine, audience language, diagnosis before tactics, and strategic drift audit.",
-        "atx": "Operator Canon, Brand Guardian oath, proof/refusal/correction, ICM layers, and meaning-before-output rules.",
+        "atx": "Operator Canon, Steward oath, proof/refusal/correction, ICM layers, and meaning-before-output rules.",
         "assessment": "the OS is stronger on meaning authority. CollideascopeOS is stronger at putting meaning directly into production lanes."
       },
       {

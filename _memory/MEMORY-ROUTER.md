@@ -26,7 +26,7 @@ All meaningful work MUST resolve memory judgment as part of the authority triad:
 
 - Conductor owns routing and next destination.
 - Keeper owns memory judgment and what should shape future work.
-- Steward / Brand Guardian owns truth authority, proof, refusal, and correction.
+- Steward owns truth authority, proof, refusal, and correction.
 - Librarian owns findability and source pointers after the right authority is known.
 
 Memory judgment is not optional when a correction, route, artifact, agent behavior, project state, generated interface, or durable source changes. If the finding does not need memory, Keeper or the session runner must state the no-write reason.
@@ -59,7 +59,7 @@ Run a memory check:
 - At session start when the task touches an existing project, agent, governance area, or prior open loop.
 - Before declaring a decision open when the user indicates it may already have been answered.
 - Before substantial root routing, governance, project, or agent work.
-- Before Brand Guardian review when prior correction or truth decisions may matter.
+- Before Steward review when prior correction or truth decisions may matter.
 - Before project cleanup or stale path rewrites.
 - Before finalizing a long analysis or build pass.
 - During handoff, resume, or context reconstruction.

@@ -11,6 +11,6 @@ Move risk judgment into signal and routing.
 
 - Signal packet -> Signal.
 - Routing decision -> Conductor.
-- Truth risk -> Brand Guardian.
+- Truth risk -> Steward.
 - Boundary risk -> Warden.
 

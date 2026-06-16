@@ -19,7 +19,7 @@ Decision, correction, reusable analysis, architecture finding, open loop, source
 
 ## Required Roles
 
-Keeper, Recorder, Librarian, Conductor. Add Steward / Brand Guardian for truth or governance claims.
+Keeper, Recorder, Librarian, Conductor. Add Steward for truth or governance claims.
 
 ## Stop Conditions
 

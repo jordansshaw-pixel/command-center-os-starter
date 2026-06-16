@@ -25,7 +25,7 @@ A passed gate only means the packet has the required fields and internal consist
 
 ## Required Roles
 
-Warden, Sentinel, Signal, Conductor, Steward / Brand Guardian.
+Warden, Sentinel, Signal, Conductor, Steward.
 
 ## Stop Conditions
 

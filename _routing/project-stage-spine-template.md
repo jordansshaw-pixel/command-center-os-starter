@@ -25,7 +25,7 @@ Librarian owns findability and index pointers.
 
 Keeper owns memory judgment.
 
-Steward / Brand Guardian owns truth, proof, refusal, and correction authority.
+Steward owns truth, proof, refusal, and correction authority.
 
 Warden owns live-system and credential hard stops.
 
@@ -136,7 +136,7 @@ Escalate to Conductor for stage sequence or project routing conflicts.
 
 Escalate to Marshal for missing deterministic contract fields.
 
-Escalate to Steward / Brand Guardian for truth, proof, claim, refusal, correction, or public/client-facing meaning.
+Escalate to Steward for truth, proof, claim, refusal, correction, or public/client-facing meaning.
 
 Escalate to Keeper/Recorder/Librarian for memory, exact record, or findability gaps.
 

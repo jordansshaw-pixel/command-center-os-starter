@@ -68,7 +68,7 @@ the OS MUST stop if approval, source, owner, risk, or rollback path is missing.
 - the OS MUST NOT assume that a preview URL, app ID, repo path, or local implementation pointer authorizes action.
 - the OS MUST NOT expose secrets, tokens, keys, private data, payment data, regulated data, or client records in chat or markdown.
 - the OS MUST NOT claim an integration exists until the implementation source and approval state prove it.
-- the OS MUST NOT bypass legal/compliance, Brand Guardian, Warden, or the operator approval because a technical path exists.
+- the OS MUST NOT bypass legal/compliance, Steward, Warden, or the operator approval because a technical path exists.
 
 ## Required Live-System Packet
 
@@ -122,7 +122,7 @@ Escalate to the operator when:
 - The action would affect legal/compliance, finances, public claims, client commitments, or irreversible state.
 - Risk score remains 3 or 4 after scoping.
 
-Escalate to Brand Guardian when:
+Escalate to Steward when:
 
 - The action could change public truth, proof, claims, refusal, doctrine, brand, or reputation.
 

@@ -52,4 +52,4 @@ Librarian owns findability and indexes.
 
 Keeper owns archive/reference memory judgment.
 
-Steward / Brand Guardian owns governance truth.
+Steward owns governance truth.

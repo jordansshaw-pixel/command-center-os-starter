@@ -12,7 +12,7 @@ Receive truth-approved work that needs voice, tone, culture translation, or reso
 - `_agents/voice/CONTRACT.md`
 - `_operator/OPERATOR-VOICE.md`
 - `_operator/OPERATOR-TRUTHS.md`
-- `_governance/brand-guardian.md`
+- `_governance/steward.md`
 - Relevant project/client voice constraints.
 
 ## Output

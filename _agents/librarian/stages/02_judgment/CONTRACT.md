@@ -20,7 +20,7 @@ Decide where knowledge belongs and how it should be found later.
 - Would asking the operator to classify this create unnecessary operator load?
 - If this came from `_intake/`, should the action be move, index, hold, or decision packet?
 - What is the authority-triad state?
-- Does routing belong to Conductor, memory judgment to Keeper, or truth authority to Steward / Brand Guardian before this can close?
+- Does routing belong to Conductor, memory judgment to Keeper, or truth authority to Steward before this can close?
 
 ## Output
 

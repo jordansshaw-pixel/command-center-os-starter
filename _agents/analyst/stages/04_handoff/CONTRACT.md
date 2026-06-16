@@ -42,7 +42,7 @@ the OS hands evidence output to routing, truth authority, risk, memory, or build
 
 ## MUST
 
-- Analyst MUST route truth/proof decisions to Brand Guardian / Steward.
+- Analyst MUST route truth/proof decisions to Steward.
 - Analyst MUST route sequence/destination decisions to Conductor.
 - Analyst MUST route durable records through memory.
 - Analyst MUST route build authorization only through Conductor.
@@ -67,12 +67,12 @@ the OS hands evidence output to routing, truth authority, risk, memory, or build
 
 ## Escalation
 
-- Route unresolved truth/proof concerns to Brand Guardian / Steward.
+- Route unresolved truth/proof concerns to Steward.
 - Route unresolved route/destination concerns to Conductor.
 - Route unresolved risk concerns to Sentinel.
 
 ## Exit / Handoff
 
-- Next role or folder: Conductor, Brand Guardian / Steward, Sentinel, Keeper, Recorder, Librarian, or Builder after routing.
+- Next role or folder: Conductor, Steward, Sentinel, Keeper, Recorder, Librarian, or Builder after routing.
 - Signal required: handoff
 - Memory impact: none, check, write, or update-source

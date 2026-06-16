@@ -1,4 +1,4 @@
-# Signal Signal Standard
+# Signal Standard
 
 Status: Specialist operating standard
 Date: 2026-06-05
@@ -120,7 +120,7 @@ Attach or summarize the Sentinel risk output when risk is 2+.
 
 ### Review Signal
 
-Use when Brand Guardian, source inspection, Mechanic, Warden, Voice, or the operator must review.
+Use when Steward, source inspection, Mechanic, Warden, Voice, or the operator must review.
 
 ```text
 Signal:
@@ -189,7 +189,7 @@ Signal:
 - Type: stop | escalation
 - Active agent:
 - Active stage:
-- Source: Sentinel, Warden, Brand Guardian, or Conductor
+- Source: Sentinel, Warden, Steward, or Conductor
 - Audience: the operator
 - Workspace:
 - Risk: 4
@@ -206,7 +206,7 @@ Signal:
 - Always include the active agent and active stage so the runner state can be surfaced in logs, UI, handoffs, and final summaries.
 - Do not hide uncertainty in polished prose.
 - If risk is 2+, include Sentinel's score or reason.
-- If truth/proof is involved, name whether Brand Guardian is required.
+- If truth/proof is involved, name whether Steward is required.
 - If live-system risk exists, name Warden and the operator approval.
 - If the work continues later, create a handoff packet or update the handoff log.
 - If a decision was made, route memory to Keeper/Recorder/Librarian.
@@ -257,12 +257,12 @@ Signal:
 - Active agent: Sentinel
 - Active stage: 03_output
 - Source: Sentinel
-- Audience: Brand Guardian
+- Audience: Steward
 - Workspace: _governance/
 - Risk: 3
 - Status: review
 - Reason: Durable law changes future agent behavior.
-- Next action: Brand Guardian review before finalizing.
+- Next action: Steward review before finalizing.
 - Memory impact: write
 - Handoff needed: yes
 ```

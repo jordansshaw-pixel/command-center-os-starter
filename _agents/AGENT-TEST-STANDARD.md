@@ -79,7 +79,7 @@ For substantial root agent work, check the relevant root files:
 - `_routing/router-contract.md`
 - `_routing/destination-map.md`
 - `_operator/` when operator truth, voice, judgment, load, approval, or cross-project truth scope matters.
-- `_governance/brand-guardian.md` when durable law, proof, refusal, brand, governance, or agent behavior is involved.
+- `_governance/steward.md` when durable law, proof, refusal, brand, governance, or agent behavior is involved.
 - `_memory/MEMORY-ROUTER.md` and `_memory/decision-source-index.md` when prior decisions or durable memory may matter.
 - `_agents/ROLE-INDEX.md` when role routing or agent files are involved.
 - `_agents/ROLE-STATUS.json` when assigning, invoking, displaying, or validating a role or role-like lens.
@@ -148,7 +148,7 @@ At minimum, name:
 Fail when:
 
 - Risk is omitted for substantial work.
-- Risk 3 or 4 work moves without the required Brand Guardian, Warden, or the operator review.
+- Risk 3 or 4 work moves without the required Steward, Warden, or the operator review.
 - Live-system, credential, legal, financial, public, or client exposure is treated as routine.
 
 ### 5. Signal Check

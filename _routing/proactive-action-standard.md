@@ -98,7 +98,7 @@ When stopped, create a decision packet or handoff instead of leaving the gap in 
 
 | Role | Responsibility |
 |---|---|
-| Steward / Brand Guardian | Decide whether the surfaced truth may move and whether proof/refusal/correction is required. |
+| Steward | Decide whether the surfaced truth may move and whether proof/refusal/correction is required. |
 | Conductor | Route the truth to the smallest safe action and destination. |
 | Keeper | Identify which prior truth matters now. |
 | Recorder | Preserve exact record of what surfaced and what changed. |

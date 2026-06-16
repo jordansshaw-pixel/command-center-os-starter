@@ -112,4 +112,4 @@ Conductor owns routing determinism.
 
 Sentinel scores interpretation drift as operator-load risk.
 
-Brand Guardian / Steward may halt durable rules that appear aligned but allow false movement.
+Steward may halt durable rules that appear aligned but allow false movement.

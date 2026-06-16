@@ -16,7 +16,7 @@ Create, repair, classify, or scaffold a project/venture/workspace.
 
 ## Required Roles
 
-Conductor, Keeper, Librarian, Steward / Brand Guardian. Add Warden for live-system or credential pointers.
+Conductor, Keeper, Librarian, Steward. Add Warden for live-system or credential pointers.
 
 ## Venture Harness
 

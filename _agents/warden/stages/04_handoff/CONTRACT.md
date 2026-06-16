@@ -11,7 +11,7 @@ Hand boundary state to routing, risk, truth authority, or the operator.
 
 - Risk -> Sentinel.
 - Routing -> Conductor.
-- Truth/refusal -> Brand Guardian.
+- Truth/refusal -> Steward.
 - Approval -> the operator.
 - Signal -> Signal.
 

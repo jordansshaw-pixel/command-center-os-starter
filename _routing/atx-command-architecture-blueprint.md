@@ -25,7 +25,7 @@ Source-confirmed inputs:
 - `CONTEXT.md`
 - `ROUTING.md`
 - `_operator/OPERATOR-TRUTHS.md`
-- `_governance/brand-guardian.md`
+- `_governance/steward.md`
 - `_governance/atx-build-roadmap.md`
 - `_memory/MEMORY-ROUTER.md`
 - `_agents/ROLE-INDEX.md`
@@ -43,7 +43,7 @@ Source-confirmed inputs:
 | Current context | Built | `CONTEXT.md` | Active build focus and recovery state exist. |
 | Root routing | Built, still maturing | `ROUTING.md`, `_routing/` | Load order, destination logic, risk, signal, and fast lane exist. |
 | Operator Canon | Built as draft | `_operator/` | Durable truth, voice, judgment, load, and approval layers exist. |
-| Brand Guardian | Built as draft | `_governance/brand-guardian.md` | Oath, proof, refusal, and correction authority exist. |
+| Steward | Built as draft | `_governance/steward.md` | Oath, proof, refusal, and correction authority exist. |
 | Memory architecture | Built as draft | `_memory/` | Memory router, decision log, sync, and source improvement exist. |
 | Connectivity architecture | Built as boundary, partial as operations | `_connectivity/` | Registry and permission classes exist; live throughput remains constrained. |
 | Root operating roles | Built as staged roles | `_agents/ROLE-INDEX.md`, role folders | Initial contracts/stages exist for root roles and all current specialist roles. |
@@ -57,7 +57,7 @@ the OS uses ICM as its structural substrate.
 
 | Layer | Function | the OS Source |
 |---|---|---|
-| Layer 0 | Identity, oath, operator authority | `CLAUDE.md`, `_operator/`, `_governance/brand-guardian.md` |
+| Layer 0 | Identity, oath, operator authority | `CLAUDE.md`, `_operator/`, `_governance/steward.md` |
 | Layer 1 | Routing, destination, scope, sequence | `ROUTING.md`, `_routing/` |
 | Layer 2 | Role, project, and stage contracts | `_agents/`, `[PROJECT]/`, `[PROJECT]/stages/` |
 | Layer 3 | Governance, memory, connectivity, proof, references | `_governance/`, `_memory/`, `_connectivity/`, `references/` |
@@ -74,7 +74,7 @@ Authority flows in this order:
 ```text
 the operator
 -> Operator Canon
--> Brand Guardian / Steward
+-> Steward
 -> Conductor routing
 -> Memory / risk / signal / boundary roles
 -> Role or project stage execution
@@ -87,7 +87,7 @@ Authority map:
 |---|---|---|---|
 | Final human authority | the operator | Business, moral, client, live-system, legal, financial, and high-risk judgment | Routine internal classification after the OS has enough evidence |
 | Operator truth | `_operator/` | the operator's durable truths, voice, judgment, load, and approval standards | Project-specific facts unless local inheritance is explicit |
-| Oath and proof | Brand Guardian / Steward | Truth, meaning, proof, refusal, correction, movement authority | Everyday task dispatch |
+| Oath and proof | Steward | Truth, meaning, proof, refusal, correction, movement authority | Everyday task dispatch |
 | Routing and sequence | Conductor | Destination, load order, handoff path, operating discipline | Final truth authority |
 | Memory judgment | Keeper | Which prior truth matters now | Exact archive ownership |
 | Exact record | Recorder | Dates, sources, provenance, version record | Routing decision |
@@ -106,7 +106,7 @@ Authority map:
 | Current root state | `CONTEXT.md` | Recovery and active build focus. |
 | Root routing | `ROUTING.md`, `_routing/` | Destination, sequence, decision packets, fast lane, generated-interface source maps. |
 | Operator truth | `_operator/` | Scope, source, owner, approval state required. |
-| Oath, proof, refusal, correction | `_governance/brand-guardian.md` | Brand Guardian artifact is canonical; entity applies it. |
+| Oath, proof, refusal, correction | `_governance/steward.md` | Steward artifact is canonical; entity applies it. |
 | Memory and decisions | `_memory/` | Durable findings, decisions, indexes, source improvement. |
 | Connectivity and permissions | `_connectivity/` | Pointer does not equal permission. |
 | Role contracts | `_agents/[role]/CONTRACT.md` | Live role needs folder, contract, stages, handoff path. |
@@ -132,7 +132,7 @@ Intake
 -> Keeper checks memory when relevant
 -> Sentinel scores risk
 -> Signal packages signal
--> Brand Guardian / Warden / the operator gates when triggered
+-> Steward / Warden / the operator gates when triggered
 -> Route to role, project, stage, output, memory, or stop
 -> Execute only after route is clear
 -> Handoff or source improvement when work matters again
@@ -210,7 +210,7 @@ Role status:
 
 | Role Type | State | Notes |
 |---|---|---|
-| Oath / Brand Guardian | Built as Steward contract | Governs truth, proof, refusal, correction. |
+| Oath / Steward | Built as Steward contract | Governs truth, proof, refusal, correction. |
 | Routing / chief of staff | Built as Conductor contract | Routes sequence, destination, handoff. |
 | Memory roles | Built as Keeper, Recorder, Librarian contracts | Memory relevance, exact record, findability. |
 | Risk and signal | Built as Sentinel and Signal contracts | Risk scoring and signal packets. |
@@ -226,7 +226,7 @@ No named role becomes live merely because it appears in a roadmap. A live role n
 | Gate | Trigger | Source | Result |
 |---|---|---|---|
 | Operator approval gate | Business, moral, client, live-system, legal, financial, public, role creation/retirement, or high-risk judgment | `_operator/OPERATOR-APPROVAL-STANDARD.md` | Decision packet or approval request |
-| Brand Guardian gate | Truth, meaning, proof, refusal, doctrine, governance, external-facing or identity-sensitive work | `_governance/brand-guardian.md` | Proceed, caveat, needs proof, correction, refuse, or escalate |
+| Steward gate | Truth, meaning, proof, refusal, doctrine, governance, external-facing or identity-sensitive work | `_governance/steward.md` | Proceed, caveat, needs proof, correction, refuse, or escalate |
 | Memory gate | Prior decisions, reusable findings, corrections, open loops, persistence | `_memory/MEMORY-ROUTER.md` | Memory check, write, source improvement, or handoff |
 | Build-time review gate | Durable build, scaffold, workflow, automation, generated interface, project structure, contracts | `_agents/BUILD-TIME-REVIEW-STANDARD.md` | Review signal before current session-runner build execution |
 | Fast-lane gate | Reversible internal risk 0-1 work | `_routing/low-risk-fast-lane-standard.md` | Scoped execution without full build-time review |
@@ -269,7 +269,7 @@ Generator output MUST fail before rendering when required source, contract, stag
 - Root identity and context.
 - Root routing and destination map.
 - Operator Canon draft.
-- Brand Guardian draft.
+- Steward draft.
 - Memory router and decision sources.
 - Connectivity boundary rules.
 - Root operating role contracts for core roles.
@@ -286,7 +286,7 @@ Generator output MUST fail before rendering when required source, contract, stag
 - Project execution architecture.
 - Command surface as operator-facing interface.
 - Live connectivity throughput.
-- Root doctrine/brand/voice/positioning artifacts beyond Brand Guardian and Operator Canon.
+- Root doctrine/brand/voice/positioning artifacts beyond Steward and Operator Canon.
 
 ### Missing Or Undecided
 

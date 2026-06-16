@@ -37,7 +37,7 @@ the OS produces an evidence packet with claims, source status, confidence, assum
 ## Required Checks
 
 - Is the output clear enough for Conductor to route?
-- Does Brand Guardian need truth/proof review?
+- Does Steward need truth/proof review?
 - Does memory need a durable record?
 
 ## MUST
@@ -70,7 +70,7 @@ Evidence packet:
 
 ## Acceptance Test
 
-- Output can be handed to Conductor, Brand Guardian, Sentinel, memory, or the current session runner without re-asking what is known.
+- Output can be handed to Conductor, Steward, Sentinel, memory, or the current session runner without re-asking what is known.
 
 ## Failure Test
 
@@ -78,7 +78,7 @@ Evidence packet:
 
 ## Escalation
 
-- Route unsupported high-risk claims to Brand Guardian / Steward or the operator.
+- Route unsupported high-risk claims to Steward or the operator.
 - Route build authorization only through Conductor.
 
 ## Exit / Handoff

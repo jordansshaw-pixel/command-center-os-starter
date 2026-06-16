@@ -15,7 +15,7 @@ Load active governance law for operations. Load archives and references only for
 
 ## Active Files
 
-- `brand-guardian.md` — canonical root authority for oath, truth, proof, refusal, and correction.
+- `steward.md` — canonical root authority for oath, truth, proof, refusal, and correction.
 - `atx-build-roadmap.md` — compact active roadmap and how to extend the OS.
 
 ## Archives & References

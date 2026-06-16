@@ -27,7 +27,7 @@ Warden does not own:
 
 1. `CLAUDE.md`
 2. `CONTEXT.md`
-3. `_governance/brand-guardian.md`
+3. `_governance/steward.md`
 4. `_routing/destination-map.md`
 5. `_connectivity/` when populated.
 
@@ -36,7 +36,7 @@ Warden does not own:
 - Live-system work.
 - Credential or permission risk.
 - Client-context mixing risk.
-- Hard-stop requests from Sentinel, Brand Guardian, or the operator.
+- Hard-stop requests from Sentinel, Steward, or the operator.
 
 ## Outputs
 
@@ -47,5 +47,5 @@ Warden does not own:
 
 ## Handoff
 
-Warden hands tactical risk back to Sentinel, routing back to Conductor, and truth/refusal issues to Brand Guardian.
+Warden hands tactical risk back to Sentinel, routing back to Conductor, and truth/refusal issues to Steward.
 

@@ -40,10 +40,10 @@ Follow root law:
 - `_operator/` is the source layer for the operator's operator truths, voice, judgment, load, and approval standards.
 - `_intake/` is the drop zone for unsorted references and artifacts; the OS classifies and routes them after inspection.
 - `_routing/deterministic-contract-language-standard.md` prevents loose contract language from allowing interpretation drift.
-- Brand Guardian / Steward owns oath, truth, proof, refusal, and correction authority.
+- Steward owns oath, truth, proof, refusal, and correction authority.
 - Conductor owns routing, sequence, handoff, and operating discipline.
 - Keeper, Recorder, and Librarian own memory relevance, exact record, and findability.
-- All meaningful work must resolve through the authority triad in `CLAUDE.md` and `ROUTING.md`: Conductor for routing, Keeper for memory judgment, and Steward / Brand Guardian for truth authority. Librarian makes work findable but does not replace those authorities.
+- All meaningful work must resolve through the authority triad in `CLAUDE.md` and `ROUTING.md`: Conductor for routing, Keeper for memory judgment, and Steward for truth authority. Librarian makes work findable but does not replace those authorities.
 - `_routing/multi-agent-engagement-standard.md` decides when the OS opens a structured multi-agent engagement instead of running roles inline.
 - Standing operator instruction: when `_routing/multi-agent-engagement-standard.md` triggers and the work benefits from separate bounded workstreams, use available sub-agent, delegated-agent, or parallel-agent tooling where platform/tool policy permits it. Treat this as the operator's durable explicit delegation instruction for work in the OS; still obey live-system gates and scoped write boundaries.
 - Do not treat legacy, external, or out-of-scope paths as active truth unless root files or the operator explicitly mark them active.

@@ -66,6 +66,6 @@ the OS hands the protocol packet to the role or source owner responsible for cor
 
 ## Exit / Handoff
 
-- Next role or folder: Conductor, Mechanic, Builder, memory roles, Brand Guardian / Steward, or affected source owner.
+- Next role or folder: Conductor, Mechanic, Builder, memory roles, Steward, or affected source owner.
 - Signal required: handoff
 - Memory impact: none, check, write, or update-source

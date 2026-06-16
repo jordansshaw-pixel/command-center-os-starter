@@ -41,7 +41,7 @@ If multiple rules match: choose highest risk. If unclear: start with `role-engag
 
 Conductor owns route, destination, sequence, next owner.
 Keeper owns memory relevance, write/no-write judgment, source-improvement need.
-Steward / Brand Guardian owns truth, proof, refusal, correction, governance authority.
+Steward owns truth, proof, refusal, correction, governance authority.
 Sentinel scores non-trivial risk. Warden blocks live-system or credential movement without approval.
 
 ## Stops

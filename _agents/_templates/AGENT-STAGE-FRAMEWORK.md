@@ -43,8 +43,8 @@ _agents/[role]/
 ## Stage Rules
 
 - Stages inherit from the role `CONTRACT.md`.
-- Stages do not override root `CLAUDE.md`, `ROUTING.md`, Brand Guardian, or memory law.
+- Stages do not override root `CLAUDE.md`, `ROUTING.md`, Steward, or memory law.
 - If a stage discovers risk, it routes through Sentinel.
-- If a stage moves work, it routes through Signal signal/handoff.
-- If a stage creates durable truth, it routes through Brand Guardian and memory.
+- If a stage moves work, it routes through Signal/handoff.
+- If a stage creates durable truth, it routes through Steward and memory.
 

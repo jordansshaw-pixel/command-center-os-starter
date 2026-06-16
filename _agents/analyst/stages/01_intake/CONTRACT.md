@@ -69,7 +69,7 @@ the OS captures the evidence question, source scope, and missing context before 
 ## Escalation
 
 - Route unclear source scope to Conductor.
-- Route truth/proof concerns to Brand Guardian / Steward.
+- Route truth/proof concerns to Steward.
 
 ## Exit / Handoff
 

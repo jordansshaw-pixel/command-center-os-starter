@@ -33,7 +33,7 @@ Librarian owns findability and source pointers.
 
 Keeper owns memory judgment.
 
-Steward / Brand Guardian owns truth authority.
+Steward owns truth authority.
 
 Builder owns implementation only after Conductor routes an approved build handoff.
 
@@ -189,7 +189,7 @@ the OS MUST name skipped triggered roles and the skip reason for substantial wor
 
 Infrastructure reducing orchestration:
 
-- Required: Conductor, Analyst, Pathfinder, Theorist, Marshal, Keeper, Steward / Brand Guardian, Librarian.
+- Required: Conductor, Analyst, Pathfinder, Theorist, Marshal, Keeper, Steward, Librarian.
 - Optional: Sentinel, Signal, Mechanic, Scout.
 - Build owner after approval: Builder.
 
@@ -201,34 +201,34 @@ Build/prototype/scaffold/integration:
 
 Context bleed/session boundary:
 
-- Required: Conductor, Keeper, Recorder, Librarian, Marshal, Steward / Brand Guardian.
+- Required: Conductor, Keeper, Recorder, Librarian, Marshal, Steward.
 - Conditional: Mechanic if failure analysis is required.
 
 Generated human-facing interface:
 
 - Required: Conductor, Analyst, Librarian, Marshal, Signal.
-- Conditional: Steward / Brand Guardian when truth, proof, identity, or governance claims are shown.
+- Conditional: Steward when truth, proof, identity, or governance claims are shown.
 - Conditional: Builder after approved generator or artifact changes.
 
 Connectivity/live-system:
 
-- Required: Conductor, Warden, Sentinel, Signal, Steward / Brand Guardian.
+- Required: Conductor, Warden, Sentinel, Signal, Steward.
 - Conditional: Analyst for external evidence, Librarian for registry/index, Builder after approved local implementation.
 
 Role/agent behavior change:
 
-- Required: Conductor, Marshal, Steward / Brand Guardian, Keeper, Librarian.
+- Required: Conductor, Marshal, Steward, Keeper, Librarian.
 - Conditional: Analyst for source evidence, Theorist for abstraction/model risk, Signal for signal/handoff.
 
 Agent-utilization or routing-bloat repair:
 
 - Required: Conductor, Marshal, Keeper, Librarian, Mechanic, Theorist, Analyst, Signal.
-- Conditional: Sentinel for risk, Steward / Brand Guardian for durable authority changes, Pathfinder for boundary/context-envelope design, Recorder for audit reconstruction, Builder for deterministic gate updates.
+- Conditional: Sentinel for risk, Steward for durable authority changes, Pathfinder for boundary/context-envelope design, Recorder for audit reconstruction, Builder for deterministic gate updates.
 
 Research/evidence:
 
 - Required: Analyst, Conductor.
-- Conditional: Steward / Brand Guardian for truth/proof, Scout for field context, Keeper for memory, Librarian for findability.
+- Conditional: Steward for truth/proof, Scout for field context, Keeper for memory, Librarian for findability.
 
 ## Deterministic Infrastructure Boundary
 
@@ -315,7 +315,7 @@ python _routing/atx_hook_runner.py --event pre-build --request "build determinis
 - the OS MUST produce an Conductor synthesis before execution or handoff.
 - the OS MUST set `Build handoff allowed: no` unless Builder has been explicitly authorized after review.
 - the OS MUST route durable findings through `_memory/MEMORY-ROUTER.md`.
-- the OS MUST use Signal signal format when work moves between agents, sessions, projects, stages, or build handoff.
+- the OS MUST use Signal format when work moves between agents, sessions, projects, stages, or build handoff.
 
 ## MUST NOT
 
@@ -384,7 +384,7 @@ Escalate to Conductor when role selection, sequence, destination, or build hando
 
 Escalate to Marshal when packet fields, trigger tests, or compliance rules are missing.
 
-Escalate to Steward / Brand Guardian when truth, proof, refusal, governance, public, or doctrine claims are involved.
+Escalate to Steward when truth, proof, refusal, governance, public, or doctrine claims are involved.
 
 Escalate to Keeper, Recorder, or Librarian when memory, exact record, or findability must persist.
 

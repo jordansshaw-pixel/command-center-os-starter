@@ -69,7 +69,7 @@ the OS captures the proposed movement, protected boundary, source scope, and har
 ## Escalation
 
 - Route hard-stop risk to Warden.
-- Route route/destination uncertainty to Conductor.
+- Escalate route/destination uncertainty to Conductor.
 
 ## Exit / Handoff
 

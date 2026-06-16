@@ -9,7 +9,7 @@ Contract language standard:
 
 ## Purpose
 
-This file defines the the OS `hello` command.
+This file defines the OS `hello` command.
 
 Short rule:
 

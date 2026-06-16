@@ -102,7 +102,7 @@ Signal:
 
 ## Review Gates
 
-- Brand Guardian:
+- Steward:
 - Sentinel:
 - Warden:
 - Analyst:

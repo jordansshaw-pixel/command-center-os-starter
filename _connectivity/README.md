@@ -27,7 +27,7 @@ Sentinel owns risk scoring.
 
 Signal owns stop, review, and handoff signals.
 
-Brand Guardian / Steward owns truth, proof, refusal, public-claim, and governance review.
+Steward owns truth, proof, refusal, public-claim, and governance review.
 
 the operator owns final approval for live-system actions, credentials, client commitments, legal/compliance, finance, public claims, and high-risk movement.
 
@@ -123,4 +123,4 @@ Escalate to Warden when live systems, secrets, credentials, access, permissions,
 
 Escalate to the operator when action would touch live systems, credentials, public claims, legal/compliance, financial commitments, client commitments, or risk score 3+.
 
-Escalate to Brand Guardian when connectivity changes could affect public truth, proof, refusal, brand, doctrine, or governance.
+Escalate to Steward when connectivity changes could affect public truth, proof, refusal, brand, doctrine, or governance.

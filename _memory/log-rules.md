@@ -80,7 +80,7 @@ Runtime pruning source:
 - Librarian owns findability and indexing.
 - Keeper owns relevance and continuity.
 - Conductor owns routing and handoff compliance.
-- Brand Guardian / Steward may stop or correct log behavior when a log creates a false truth surface.
+- Steward may stop or correct log behavior when a log creates a false truth surface.
 
 ## Failure Condition
 

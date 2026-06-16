@@ -27,7 +27,7 @@ Do not load broad logs, full archived sources, all routing standards, all role c
 
 ## Authority
 
-Conductor owns route selection. Keeper owns no-load memory judgment. Steward / Brand Guardian owns truth/proof stops. Warden owns live-system and credential stops.
+Conductor owns route selection. Keeper owns no-load memory judgment. Steward owns truth/proof stops. Warden owns live-system and credential stops.
 
 ## Cutover State
 

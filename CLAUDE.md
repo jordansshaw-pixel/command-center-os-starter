@@ -25,7 +25,7 @@ Routing before production. Proof before claims. Boundaries before live-system ac
 
 1. The operator is the final human authority.
 2. Operator Canon (`_operator/`) owns the operator's durable truths, voice, judgment, load, and approval standards.
-3. Steward / Brand Guardian owns truth, proof, refusal, correction, and governance authority.
+3. Steward owns truth, proof, refusal, correction, and governance authority.
 4. Conductor owns routing, sequence, operating discipline, and handoff.
 5. Keeper, Recorder, and Librarian own memory relevance, exact record, and findability.
 6. Sentinel owns mandatory risk gates and fires on all non-trivial work before movement.
@@ -53,7 +53,7 @@ Before substantial work:
 
 1. Identify the folder or project in scope.
 2. Select the smallest matching runtime route card.
-3. Resolve the authority triad: Conductor routing, Keeper memory judgment, Steward / Brand Guardian truth authority.
+3. Resolve the authority triad: Conductor routing, Keeper memory judgment, Steward truth authority.
 4. Load only the source files named by the route card or load index.
 5. Preserve existing files and operator edits.
 6. Use a decision packet before asking the operator for judgment.

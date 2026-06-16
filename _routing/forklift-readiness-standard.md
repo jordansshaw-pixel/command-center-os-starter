@@ -21,7 +21,7 @@ Librarian owns findability, indexes, manifests, and pointer hygiene.
 
 Keeper owns memory relevance and whether material remains active, archive, or reference.
 
-Steward / Brand Guardian owns governance truth and prevents source evidence from being treated as active law.
+Steward owns governance truth and prevents source evidence from being treated as active law.
 
 ## Scope
 

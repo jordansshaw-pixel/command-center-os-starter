@@ -9,7 +9,7 @@ Load when work touches truth, proof, oath, refusal, correction, governance, bran
 
 ## Authority
 
-Steward / Brand Guardian decides whether work may move as proceed, proceed with caveat, needs proof, needs correction, refuse, or escalate.
+Steward decides whether work may move as proceed, proceed with caveat, needs proof, needs correction, refuse, or escalate.
 
 ## Must
 
@@ -23,5 +23,5 @@ Truth gate with proof need, approval state, correction/refusal if needed, and ne
 
 ## Provenance
 
-- `_governance/brand-guardian.md`
+- `_governance/steward.md`
 - `_routing/source-archive/2026-06-07/ROOT-ROUTING.md`

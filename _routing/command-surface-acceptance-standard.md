@@ -31,7 +31,7 @@ Conductor owns command-surface routing and acceptance.
 
 Librarian owns findability and source linkage.
 
-Brand Guardian owns truth, proof, meaning, refusal, and correction review.
+Steward owns truth, proof, meaning, refusal, and correction review.
 
 Sentinel owns risk scoring.
 
@@ -39,7 +39,7 @@ Builder owns generator or implementation changes only after routing permits move
 
 ## Operator-Facing Action
 
-the operator may ask to view, improve, build, rename, polish, compare, or expand the the OS command surface.
+the operator may ask to view, improve, build, rename, polish, compare, or expand the OS command surface.
 
 the operator does not need to distinguish the command surface from architecture before the OS classifies it.
 
@@ -120,7 +120,7 @@ The command surface is accepted only when all criteria pass:
 - the OS MUST NOT render queued, provisional, missing, dormant, or blocked roles as visually equivalent to active built roles.
 - the OS MUST NOT show project runtime facts as current unless the project-local source supports them.
 - the OS MUST NOT treat the command surface as a dashboard with live operational controls unless a control-system contract is created and approved.
-- the OS MUST NOT use the command surface to bypass Brand Guardian, memory, routing, connectivity, or project-locality rules.
+- the OS MUST NOT use the command surface to bypass Steward, memory, routing, connectivity, or project-locality rules.
 - the OS MUST NOT rename the command surface in source files without checking whether `Neural Interface`, `Command Surface`, or another name has been approved.
 
 ## Inputs
@@ -185,7 +185,7 @@ This standard fails when:
 
 ## Escalation
 
-Escalate to Brand Guardian when the surface changes meaning, proof, oath, doctrine, external-facing claims, brand, or identity.
+Escalate to Steward when the surface changes meaning, proof, oath, doctrine, external-facing claims, brand, or identity.
 
 Escalate to Warden when the surface references live systems, credentials, permissions, accounts, integrations, or access state in a way that could imply permission.
 

@@ -78,3 +78,14 @@ you create (`_connectivity/env-vault-map.md`). Plaintext `.env` files stay ignor
   you want your own theme.
 - Set your workspace name: the default product name is "Command Center OS"; find/replace to rebrand.
 - Run onboarding to fill `_operator/` and replace the fresh-install boot state.
+
+## Credits
+
+Command Center OS stands on foundational concepts contributed by:
+
+- **Jake Van Clief** — the **Interoperable Context Methodology (ICM)**, the staged
+  folder design behind the project workspaces and the four-stage agent spine.
+- **Curtis Hays** — **Doctrine** as the foundational architecture, as described in
+  his articles.
+
+See `LICENSE` for the full attribution notice.

@@ -66,7 +66,7 @@ def render_text(packet: dict[str, str | list[str]]) -> str:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Emit the the OS hello entrance response.")
+    parser = argparse.ArgumentParser(description="Emit the OS hello entrance response.")
     parser.add_argument("--format", choices=["text", "json"], default="text")
     return parser.parse_args()
 

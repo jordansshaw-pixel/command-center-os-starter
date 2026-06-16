@@ -27,7 +27,7 @@ Librarian owns project findability, source pointers, and index placement.
 
 Keeper owns project memory judgment.
 
-Steward / Brand Guardian owns truth, proof, refusal, correction, and claim boundaries.
+Steward owns truth, proof, refusal, correction, and claim boundaries.
 
 Warden owns credentials, live systems, regulated data, legal/compliance exposure, and external-system hard stops.
 
@@ -153,7 +153,7 @@ MUST include:
 
 MUST NOT:
 
-- Override root routing, Brand Guardian, memory, or live-system rules.
+- Override root routing, Steward, memory, or live-system rules.
 - Route runtime artifacts into a method-engine folder unless that folder is the approved destination.
 
 ### `_governance/README.md`
@@ -164,14 +164,14 @@ Purpose:
 
 MUST include:
 
-- Root Brand Guardian pointer.
+- Root Steward pointer.
 - Project-local truth and claim boundaries.
 - Approval-required claims.
 - Project-specific refusal/correction conditions.
 
 MUST NOT:
 
-- Duplicate root Brand Guardian law.
+- Duplicate root Steward law.
 - Generalize project-specific claims into root law without decision packet.
 
 ### `_memory/project-memory.md`
@@ -253,7 +253,7 @@ Date: [YYYY-MM-DD]
 - Root context: `../CONTEXT.md`
 - Root routing: `../ROUTING.md`
 - Root Operator Canon: `../_operator/`
-- Root Brand Guardian: `../_governance/brand-guardian.md`
+- Root Steward: `../_governance/steward.md`
 - Root memory: `../_memory/`
 - Root connectivity: `../_connectivity/`
 - Root project folder inheritance template: `../_routing/project-folder-inheritance-template.md`
@@ -405,7 +405,7 @@ Stop when:
 
 Escalate to Conductor for routing and sequence.
 
-Escalate to Steward / Brand Guardian for truth, proof, claims, refusal, or correction.
+Escalate to Steward for truth, proof, claims, refusal, or correction.
 
 Escalate to Keeper/Recorder/Librarian for memory, exact record, or findability.
 
@@ -434,14 +434,14 @@ This folder carries [PROJECT] governance that inherits from root without duplica
 ## Inherits
 
 - Root Operator Canon: `../[relative-root]/_operator/`
-- Root Brand Guardian: `../[relative-root]/_governance/brand-guardian.md`
+- Root Steward: `../[relative-root]/_governance/steward.md`
 - Root routing: `../[relative-root]/ROUTING.md`
 - Root memory: `../[relative-root]/_memory/`
 - Root connectivity: `../[relative-root]/_connectivity/`
 
 ## Owner
 
-Steward / Brand Guardian owns truth, proof, refusal, correction, and claim review.
+Steward owns truth, proof, refusal, correction, and claim review.
 
 Conductor owns routing and sequence.
 
@@ -460,7 +460,7 @@ the operator owns business judgment, public/client commitments, project activati
 
 ## MUST NOT
 
-- Project governance MUST NOT duplicate root Brand Guardian law.
+- Project governance MUST NOT duplicate root Steward law.
 - Project governance MUST NOT generalize project-specific truth into root law without a decision packet.
 - Project governance MUST NOT treat legacy, archive, external, or generated material as current truth without source authority.
 
@@ -487,7 +487,7 @@ This layer fails when root law is duplicated, project truth is generalized to ro
 
 ## Escalation
 
-Escalate to Steward / Brand Guardian for truth, proof, claims, refusal, or correction.
+Escalate to Steward for truth, proof, claims, refusal, or correction.
 
 Escalate to the operator for public/client commitments, business judgment, project activation, or risk score 3+.
 ````
@@ -732,7 +732,7 @@ Escalate to Librarian for project findability, index, and source-placement gaps.
 
 Escalate to Keeper/Recorder for memory and exact-record gaps.
 
-Escalate to Steward / Brand Guardian for truth, proof, claims, refusal, or correction.
+Escalate to Steward for truth, proof, claims, refusal, or correction.
 
 Escalate to Warden for credentials, live systems, regulated data, legal/compliance, external systems, or implementation pointers.
 

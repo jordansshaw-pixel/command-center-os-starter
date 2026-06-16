@@ -69,7 +69,7 @@ Protocol packet:
 
 ## Escalation
 
-- Route stop/conflict to Conductor, Brand Guardian / Steward, or the operator as needed.
+- Route stop/conflict to Conductor, Steward, or the operator as needed.
 
 ## Exit / Handoff
 

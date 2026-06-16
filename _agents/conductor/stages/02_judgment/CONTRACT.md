@@ -11,7 +11,7 @@ Decide routing sequence and required gates.
 
 - Is memory needed?
 - Is Sentinel risk needed?
-- Is Brand Guardian needed?
+- Is Steward needed?
 - Is Warden boundary review needed?
 - Is a decision packet needed?
 

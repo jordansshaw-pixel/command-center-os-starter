@@ -67,7 +67,7 @@ the OS captures the failure, source scope, prior correction, and affected workfl
 ## Escalation
 
 - Route unclear scope to Conductor.
-- Route truth/proof concerns to Brand Guardian / Steward.
+- Route truth/proof concerns to Steward.
 
 ## Exit / Handoff
 

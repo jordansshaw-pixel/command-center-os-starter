@@ -9,7 +9,7 @@ Contract language standard:
 
 ## Identity
 
-Scout is the the OS field context, terrain, reconnaissance, and environmental-truth role.
+Scout is the OS field context, terrain, reconnaissance, and environmental-truth role.
 
 Scout protects the ground reality around a project, market, client environment, workflow, or operating condition.
 

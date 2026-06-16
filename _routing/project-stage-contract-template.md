@@ -23,7 +23,7 @@ Conductor owns project-stage routing, sequencing, and handoff discipline.
 
 Marshal owns deterministic contract compliance.
 
-Steward / Brand Guardian owns truth, proof, refusal, correction, and public/client-facing claim boundaries.
+Steward owns truth, proof, refusal, correction, and public/client-facing claim boundaries.
 
 Keeper owns memory judgment for durable project findings and decisions.
 
@@ -62,7 +62,7 @@ Each project stage contract MUST inherit from the nearest available project sour
 - Root `CONTEXT.md`
 - Root `ROUTING.md`
 - Root `_operator/`
-- Root `_governance/brand-guardian.md`
+- Root `_governance/steward.md`
 - Root `_routing/deterministic-contract-language-standard.md`
 - Root `_routing/project-stage-contract-template.md`
 - Root `_memory/MEMORY-ROUTER.md`
@@ -154,7 +154,7 @@ the OS MUST stop or reroute when the request belongs to [excluded stages, folder
 - `[relative path]/_memory/project-memory.md` when present
 - `[relative path]/_memory/decisions.md` when present
 - `[relative path]/_connectivity/README.md` when present
-- Root Brand Guardian: `[relative path]/_governance/brand-guardian.md`
+- Root Steward: `[relative path]/_governance/steward.md`
 - Root routing: `[relative path]/ROUTING.md`
 - Root deterministic contract standard: `[relative path]/_routing/deterministic-contract-language-standard.md`
 
@@ -282,7 +282,7 @@ Other valid handoffs:
 
 Signal required:
 
-- [none | Signal signal | handoff packet | decision packet]
+- [none | Signal | handoff packet | decision packet]
 
 Memory impact:
 
@@ -317,7 +317,7 @@ This contract fails when:
 
 Escalate to Conductor for routing, sequence, destination, or stage boundary conflicts.
 
-Escalate to Steward / Brand Guardian for truth, proof, claim, refusal, correction, or public/client-facing meaning.
+Escalate to Steward for truth, proof, claim, refusal, correction, or public/client-facing meaning.
 
 Escalate to Keeper/Recorder/Librarian for memory judgment, exact record, or findability gaps.
 
@@ -394,7 +394,7 @@ Escalate to Marshal when deterministic fields are missing.
 
 Escalate to Conductor when stage routing or sequence is unclear.
 
-Escalate to Steward / Brand Guardian when truth, proof, claim, refusal, or correction authority is implicated.
+Escalate to Steward when truth, proof, claim, refusal, or correction authority is implicated.
 
 Escalate to Warden when live-system, credential, regulated-data, legal, compliance, or external-system movement appears.
 

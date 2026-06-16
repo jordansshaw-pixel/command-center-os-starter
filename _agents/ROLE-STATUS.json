@@ -15,7 +15,7 @@
   "roles": [
     {
       "title": "Steward",
-      "description": "Operator-truth inheritance, proof, refusal, Brand Guardian.",
+      "description": "Operator-truth inheritance, proof, refusal, Steward.",
       "color": "pink",
       "truthStatus": "active-root-operating-role",
       "sourcePath": "_agents/ROLE-INDEX.md",

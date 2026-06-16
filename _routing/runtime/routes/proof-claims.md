@@ -10,13 +10,13 @@ Truth, proof, refusal, brand, public wording, client-facing wording, unsupported
 ## Load Next
 
 - `_agents/steward/doctrine/truth-proof-refusal.md`
-- `_governance/brand-guardian.md`
+- `_governance/steward.md`
 - Relevant source file for the claim.
 - Operator Canon only when operator truth, voice, approval, or judgment is directly involved.
 
 ## Required Roles
 
-Steward / Brand Guardian, Analyst, Sentinel, Conductor. Add Voice only after truth is settled and wording may move.
+Steward, Analyst, Sentinel, Conductor. Add Voice only after truth is settled and wording may move.
 
 ## Stop Conditions
 
@@ -28,4 +28,4 @@ Truth gate: proceed, proceed with caveat, needs proof, needs correction, refuse,
 
 ## Provenance
 
-Source archive: `_routing/source-archive/2026-06-07/ROOT-ROUTING.md`; root source: `_governance/brand-guardian.md`.
+Source archive: `_routing/source-archive/2026-06-07/ROOT-ROUTING.md`; root source: `_governance/steward.md`.

@@ -15,7 +15,7 @@ Sentinel owns:
 - Assumption pressure-testing.
 - Tactical coherence.
 - Reversibility review.
-- Whether work needs Brand Guardian, Warden, source inspection, Mechanic, or the operator before it moves.
+- Whether work needs Steward, Warden, source inspection, Mechanic, or the operator before it moves.
 
 Sentinel does not own:
 
@@ -29,7 +29,7 @@ Sentinel does not own:
 2. `CONTEXT.md`
 3. `ROUTING.md`
 4. `_agents/sentinel/RISK-STANDARD.md`
-5. `_governance/brand-guardian.md` when risk touches truth, brand, proof, refusal, or durable law.
+5. `_governance/steward.md` when risk touches truth, brand, proof, refusal, or durable law.
 6. Relevant project/stage context.
 
 ## Inputs

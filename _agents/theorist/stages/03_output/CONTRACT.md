@@ -72,7 +72,7 @@ Model-coherence packet:
 
 ## Escalation
 
-- Route truth/proof concerns to Brand Guardian / Steward.
+- Route truth/proof concerns to Steward.
 - Route build implications to Conductor and Builder only after authorization.
 
 ## Exit / Handoff

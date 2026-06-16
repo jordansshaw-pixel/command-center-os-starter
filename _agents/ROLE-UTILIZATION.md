@@ -40,17 +40,17 @@ This is provisional evidence, not proof that other roles were never used. A role
 Latest role-invocation evidence:
 
 - 2026-06-07 16:30:09 -05:00: ExampleWeb active path pointer cleanup invoked Conductor, Librarian, Keeper, Recorder, and Warden. No triggered roles were skipped.
-- 2026-06-07 16:21:13 -05:00: ExampleWeb GHL media reference preservation invoked Conductor, Librarian, Recorder, Keeper, Warden, and Steward / Brand Guardian. No triggered roles were skipped.
+- 2026-06-07 16:21:13 -05:00: ExampleWeb GHL media reference preservation invoked Conductor, Librarian, Recorder, Keeper, Warden, and Steward. No triggered roles were skipped.
 - 2026-06-07 16:09:22 -05:00: ExampleAgency stale path cleanup rehearsal invoked Conductor, Librarian, Keeper, and Warden. No triggered roles were skipped.
 - 2026-06-07 15:57:43 -05:00: Doctrine path registry pass invoked Conductor, Librarian, Marshal, Mechanic, and Recorder. No triggered roles were skipped.
-- 2026-06-07 15:52:33 -05:00: the OS log pruning pass invoked Conductor, Keeper, Recorder, Librarian, Marshal, Mechanic, and Steward / Brand Guardian. No triggered roles were skipped.
-- 2026-06-07 15:47:44 -05:00: Root boot compaction pass invoked Conductor, Keeper, Recorder, Librarian, Steward / Brand Guardian, Marshal, Mechanic, and Signal. No triggered roles were skipped.
-- 2026-06-07 15:40:55 -05:00: Runtime Tier 0 cutover pass invoked Conductor, Keeper, Recorder, Librarian, Marshal, Mechanic, Steward / Brand Guardian, and Signal. No triggered roles were skipped.
+- 2026-06-07 15:52:33 -05:00: the OS log pruning pass invoked Conductor, Keeper, Recorder, Librarian, Marshal, Mechanic, and Steward. No triggered roles were skipped.
+- 2026-06-07 15:47:44 -05:00: Root boot compaction pass invoked Conductor, Keeper, Recorder, Librarian, Steward, Marshal, Mechanic, and Signal. No triggered roles were skipped.
+- 2026-06-07 15:40:55 -05:00: Runtime Tier 0 cutover pass invoked Conductor, Keeper, Recorder, Librarian, Marshal, Mechanic, Steward, and Signal. No triggered roles were skipped.
 - 2026-06-07 15:35:38 -05:00: Doctrine-aware runner compatibility pass invoked Conductor, Marshal, Mechanic, Librarian, Builder, Keeper, Recorder, and Signal. No triggered roles were skipped.
 - 2026-06-07 15:22:53 -05:00: Runner compatibility was added to the lean runtime plan. Invoked Conductor, Mechanic, Marshal, and Librarian. No triggered roles were skipped.
-- 2026-06-07 15:16:31 -05:00: Agent doctrine runtime pass invoked Conductor, Keeper, Recorder, Librarian, Marshal, Mechanic, Sentinel, Signal, Steward / Brand Guardian, Warden, Analyst, Pathfinder, Theorist, Builder, Voice, Liaison, and Scout. No triggered roles were skipped.
-- 2026-06-07 14:55:05 -05:00: Lean routing runtime implementation invoked Conductor, Keeper, Recorder, Librarian, Marshal, Mechanic, Sentinel, Signal, Steward / Brand Guardian, and Builder. No triggered roles were skipped.
-- 2026-06-07 13:58:14 -05:00: `Test-Routing-Rehearsal/` minimal routing rehearsal invoked Conductor, Keeper, Recorder, Librarian, Steward / Brand Guardian, Analyst, Pathfinder, Warden, Theorist, Sentinel, Signal, Marshal, Mechanic, Liaison, Scout, and Builder. Voice was triggered by public/landing-page wording but skipped because the wording was stopped as unusable test material rather than refined.
+- 2026-06-07 15:16:31 -05:00: Agent doctrine runtime pass invoked Conductor, Keeper, Recorder, Librarian, Marshal, Mechanic, Sentinel, Signal, Steward, Warden, Analyst, Pathfinder, Theorist, Builder, Voice, Liaison, and Scout. No triggered roles were skipped.
+- 2026-06-07 14:55:05 -05:00: Lean routing runtime implementation invoked Conductor, Keeper, Recorder, Librarian, Marshal, Mechanic, Sentinel, Signal, Steward, and Builder. No triggered roles were skipped.
+- 2026-06-07 13:58:14 -05:00: `Test-Routing-Rehearsal/` minimal routing rehearsal invoked Conductor, Keeper, Recorder, Librarian, Steward, Analyst, Pathfinder, Warden, Theorist, Sentinel, Signal, Marshal, Mechanic, Liaison, Scout, and Builder. Voice was triggered by public/landing-page wording but skipped because the wording was stopped as unusable test material rather than refined.
 
 ## Finding
 

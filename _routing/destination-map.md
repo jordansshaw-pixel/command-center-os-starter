@@ -22,7 +22,7 @@ Route to the source-of-truth folder first. Add pointers later only when useful.
 | `ROUTING.md` | Root routing behavior and load order. |
 | `_operator/` | the operator's operator truths, voice, judgment patterns, load standard, and approval standard. |
 | `_intake/` | Operator drop zone for unsorted references and artifacts before classification. |
-| `_governance/` | Oath, doctrine, Brand Guardian, proof, refusal, correction, brand law, voice, positioning. |
+| `_governance/` | Oath, doctrine, Steward, proof, refusal, correction, brand law, voice, positioning. |
 | `_routing/` | Router contracts, destination maps, routing patterns, handoff protocol. |
 | `_memory/` | Memory routing, decisions, source improvement, sync rules, indexes, open loops. |
 | `_connectivity/` | Tool registry, permissions, live-system boundaries, integration risk. |
@@ -40,7 +40,7 @@ Use `_operator/` for:
 - `OPERATOR-LOAD-STANDARD.md`
 - `OPERATOR-APPROVAL-STANDARD.md`
 
-Operator Canon is upstream of governance. Brand Guardian / Steward inherits Operator truth and then applies proof, refusal, correction, and movement authority.
+Operator Canon is upstream of governance. Steward inherits Operator truth and then applies proof, refusal, correction, and movement authority.
 
 Do not put project-specific facts, client-specific claims, live-system state, or temporary drafts in `_operator/`.
 
@@ -48,7 +48,7 @@ Do not put project-specific facts, client-specific claims, live-system state, or
 
 Use `_governance/` for:
 
-- Brand Guardian law.
+- Steward law.
 - Oath or constitution.
 - Doctrine.
 - Brand guide.
@@ -59,7 +59,7 @@ Use `_governance/` for:
 
 Current canonical file:
 
-- `_governance/brand-guardian.md`
+- `_governance/steward.md`
 
 Current planning references:
 
@@ -214,7 +214,7 @@ Use `_agents/[role]/stages/[stage]/CONTRACT.md` for the role's internal workflow
 
 Initial root operating contracts now exist for:
 
-- `steward` for oath / Brand Guardian embodiment.
+- `steward` for oath / Steward embodiment.
 - `conductor` for routing and handoff.
 - `keeper` for memory judgment.
 - `recorder` for exact record.
@@ -222,7 +222,7 @@ Initial root operating contracts now exist for:
 - `sentinel` for risk.
 - `signal` for signal packets.
 - `warden` for hard boundaries.
-- `voice` for voice/tone under Brand Guardian.
+- `voice` for voice/tone under Steward.
 
 Do not build every specialist role folder merely because the role map exists. Specialist contracts should follow after the root operating contracts prove the pattern.
 

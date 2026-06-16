@@ -108,7 +108,7 @@ Default route:
 
 - Routing behavior problem -> `_routing/router-contract.md`
 - Memory behavior problem -> `_memory/MEMORY-ROUTER.md` or `_memory/memory-rules.md`
-- Governance/truth problem -> `_governance/brand-guardian.md`
+- Governance/truth problem -> `_governance/steward.md`
 - Role-world, contract, or stage problem -> `_agents/ROLE-INDEX.md`, `_agents/[role]/CONTRACT.md`, or `_agents/[role]/stages/[stage]/CONTRACT.md`
 - Handoff problem -> `_handoffs/README.md` or `_handoffs/HANDOFF-TEMPLATE.md`
 - Project-local problem -> project `CONTEXT.md`, `ROUTING.md`, or `_memory/`

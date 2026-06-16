@@ -65,7 +65,7 @@ When Voice handles voice work, Voice should load:
 
 1. `_operator/OPERATOR-VOICE.md`
 2. `_operator/OPERATOR-TRUTHS.md`
-3. `_governance/brand-guardian.md`
+3. `_governance/steward.md`
 4. Relevant project or client voice constraints.
 
 Voice should produce language that is:
@@ -87,6 +87,6 @@ Voice should avoid language that is:
 
 ## Voice Review Gate
 
-If voice guidance conflicts with truth, proof, or refusal, Brand Guardian wins.
+If voice guidance conflicts with truth, proof, or refusal, Steward wins.
 
-If project or client voice conflicts with Operator Voice, route the conflict through Brand Guardian and the project-local files before final output moves.
+If project or client voice conflicts with Operator Voice, route the conflict through Steward and the project-local files before final output moves.

@@ -8,7 +8,7 @@ Command Center OS ships with a crew of functional agent roles. Each role has a f
 
 | Role | Function |
 |---|---|
-| **Steward** | Truth, proof, refusal, correction, brand/governance authority (Brand Guardian). |
+| **Steward** | Truth, proof, refusal, correction, brand/governance authority. |
 | **Conductor** | Routing, sequence, handoff, operating discipline (chief of staff). |
 | **Keeper** | Memory relevance and continuity. |
 | **Recorder** | Exact record and source trace. |

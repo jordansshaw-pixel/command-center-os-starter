@@ -185,7 +185,7 @@ INFERENCE_RULES: list[tuple[str, list[str]]] = [
 
 
 ROLE_TRIGGER_RULES: dict[str, list[str]] = {
-    "Steward": ["truth", "proof", "oath", "refusal", "brand guardian", "governance", "public meaning"],
+    "Steward": ["truth", "proof", "oath", "refusal", "steward", "governance", "public meaning"],
     "Keeper": ["memory", "prior decision", "continuity", "context budget", "no-load"],
     "Recorder": ["exact record", "provenance", "timeline", "audit reconstruction", "timestamp"],
     "Librarian": ["findability", "index", "retrieval", "source map", "pointer"],

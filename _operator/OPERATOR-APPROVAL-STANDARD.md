@@ -64,7 +64,7 @@ Stop and escalate when:
 - The source of truth is missing and the action is not safely reversible.
 - The project or client boundary is unclear.
 - The risk score is high or critical.
-- The work would bypass Brand Guardian, memory, routing, or live-system boundaries.
+- The work would bypass Steward, memory, routing, or live-system boundaries.
 
 ## Approval Labels
 

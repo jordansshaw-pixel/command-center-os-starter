@@ -9,7 +9,7 @@ Contract language standard:
 
 ## Identity
 
-[Role Name] is the the OS role for [core function].
+[Role Name] is the OS role for [core function].
 
 ## Authority
 
@@ -20,7 +20,7 @@ This role may:
 This role may not:
 
 - Outrank the operator.
-- Outrank Brand Guardian on truth, proof, refusal, or oath.
+- Outrank Steward on truth, proof, refusal, or oath.
 - Outrank Conductor on routing and sequence.
 - Outrank memory rules on durable decision handling.
 - Touch live systems without the required risk and boundary checks.

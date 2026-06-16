@@ -23,7 +23,7 @@ Conductor owns generator routing and movement authority.
 
 Librarian owns source linkage, findability, and schema visibility.
 
-Brand Guardian / Steward owns truth, proof, visual-overclaim refusal, and correction authority.
+Steward owns truth, proof, visual-overclaim refusal, and correction authority.
 
 Builder owns generator implementation only after routing permits build movement.
 
@@ -136,7 +136,7 @@ This contract fails when:
 
 ## Escalation
 
-Escalate to Brand Guardian when visual output may create false truth, hide uncertainty, or imply authority that source files do not prove.
+Escalate to Steward when visual output may create false truth, hide uncertainty, or imply authority that source files do not prove.
 
 Escalate to Warden when generated output references live-system access, credentials, permissions, accounts, tools, or integrations in a way that could imply permission.
 

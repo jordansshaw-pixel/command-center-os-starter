@@ -9,7 +9,7 @@ Return voice-shaped work to routing, signal, or final review.
 
 ## Handoff Routes
 
-- Truth concern -> Brand Guardian.
+- Truth concern -> Steward.
 - Signal concern -> Signal.
 - Routing -> Conductor.
 - Final review -> requesting role or project/stage.

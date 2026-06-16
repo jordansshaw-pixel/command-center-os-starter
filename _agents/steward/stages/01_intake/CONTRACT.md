@@ -11,13 +11,13 @@ Receive oath, truth, proof, refusal, correction, brand, doctrine, or identity-se
 
 - `CLAUDE.md`
 - `CONTEXT.md`
-- `_governance/brand-guardian.md`
+- `_governance/steward.md`
 - `_agents/steward/CONTRACT.md`
 
 ## Output
 
 - Intake summary.
-- Reason Brand Guardian / Steward is needed.
+- Reason Steward is needed.
 - Initial risk and proof concern.
 
 ## Exit

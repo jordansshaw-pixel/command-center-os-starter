@@ -77,6 +77,6 @@ the OS hands build output to routing, review, memory, project owner, or the next
 
 ## Exit / Handoff
 
-- Next role or folder: Conductor, Sentinel, Warden, Brand Guardian / Steward, memory roles, project owner, or next approved build pass.
+- Next role or folder: Conductor, Sentinel, Warden, Steward, memory roles, project owner, or next approved build pass.
 - Signal required: handoff
 - Memory impact: none, check, write, or update-source

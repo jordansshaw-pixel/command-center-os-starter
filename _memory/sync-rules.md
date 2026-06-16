@@ -22,7 +22,7 @@ One rule should have one canonical source. Other surfaces may point to it or sum
 | Codex-facing root loader | `AGENTS.md` pointing to `CLAUDE.md` and root source files |
 | Root routing | `ROUTING.md`, `_routing/router-contract.md` |
 | Destination routing | `_routing/destination-map.md` |
-| Brand Guardian, proof, refusal, correction | `_governance/brand-guardian.md` |
+| Steward, proof, refusal, correction | `_governance/steward.md` |
 | Memory behavior | `_memory/MEMORY-ROUTER.md` |
 | Memory law | `_memory/memory-rules.md` |
 | OS-owned log timestamp and ownership rules | `_memory/log-rules.md` |

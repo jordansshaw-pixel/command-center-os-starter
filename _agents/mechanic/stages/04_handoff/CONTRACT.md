@@ -65,11 +65,11 @@ the OS hands the repair packet to the next role or source owner with prevention 
 
 ## Escalation
 
-- Route unresolved source truth to Brand Guardian / Steward.
+- Route unresolved source truth to Steward.
 - Route unresolved implementation to Conductor.
 
 ## Exit / Handoff
 
-- Next role or folder: Conductor, Builder, memory roles, Brand Guardian / Steward, or affected source owner.
+- Next role or folder: Conductor, Builder, memory roles, Steward, or affected source owner.
 - Signal required: handoff
 - Memory impact: none, check, write, or update-source

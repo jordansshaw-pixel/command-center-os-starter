@@ -14,4 +14,4 @@ A judgment note: risk score, knowns/assumptions, and go/no-go for output.
 
 ## Handoff
 
-To `03_output` on go. Escalate to Steward / Brand Guardian for any truth/claim question.
+To `03_output` on go. Escalate to Steward for any truth/claim question.

@@ -33,7 +33,7 @@ REQUIRED_TRUE_FIELDS = [
 
 BLOCKING_FIELDS = [
     ("changes_operator_canon", "Changes Operator Canon."),
-    ("changes_brand_guardian", "Changes Brand Guardian oath/proof/refusal/governance authority."),
+    ("changes_steward", "Changes Steward oath/proof/refusal/governance authority."),
     ("changes_approval_or_refusal", "Changes approval standards or refusal authority."),
     ("changes_durable_law", "Changes durable root law, routing law, governance, or doctrine."),
     ("touches_live_system", "Touches live systems, external accounts, third-party writes, or deployment."),

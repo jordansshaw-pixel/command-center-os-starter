@@ -25,7 +25,7 @@ Think of it as: **an operating manual your AI assistant boots from.**
 - **Agent crew (17 roles)** — functional roles (Conductor, Sentinel, Steward, Keeper, Builder, Warden, and more), each with a contract, doctrine, and a four-stage spine. Fully renameable.
 - **Mandatory risk gate** — Sentinel scores risk and fires on all non-trivial work before anything moves.
 - **Live-system & credential boundaries** — Warden stops before touching websites, deploys, money, or secrets and asks for approval.
-- **Truth & proof governance** — Steward / Brand Guardian refuses unsupported claims (proof before claims).
+- **Truth & proof governance** — Steward refuses unsupported claims (proof before claims).
 - **Operator Canon** — your truths, voice, judgment, load, and approval standards drive the system.
 - **Guided onboarding** — interactive `install.py` (no agent required) or the agent-driven route fills your profile.
 - **Venture harness** — each venture gets a full, portable project structure installed at creation by the agent.

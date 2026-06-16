@@ -68,7 +68,7 @@ the OS MUST load the full role `CONTRACT.md` and relevant stage `CONTRACT.md` wh
 | Role | Primary Trigger Signals | Compact Output |
 |---|---|---|
 | Conductor | Routing, sequence, scope, destination, owner, handoff, next action | Route, sequence, receiving owner, stop condition |
-| Steward / Brand Guardian | Truth, proof, oath, refusal, correction, governance, brand, public meaning | Truth gate, proof need, correction, refusal, approval state |
+| Steward | Truth, proof, oath, refusal, correction, governance, brand, public meaning | Truth gate, proof need, correction, refusal, approval state |
 | Keeper | Memory relevance, prior decisions, context budget, continuity, no-load judgment | Memory check, no-load reason, persistence decision |
 | Recorder | Exact record, provenance, timeline, audit reconstruction, quoted source state | Record check, source trace, timestamp or evidence pointer |
 | Librarian | Findability, indexing, source maps, placement, retrieval, pointer hygiene | Destination/index pointer, source map update need |

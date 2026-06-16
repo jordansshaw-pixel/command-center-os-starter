@@ -13,7 +13,7 @@ Voice refines expression without changing proof, claim boundaries, or approval s
 
 ## Must
 
-- Wait for Brand Guardian when truth, brand, public, or client-facing claims are involved.
+- Wait for Steward when truth, brand, public, or client-facing claims are involved.
 - Label provisional voice observations.
 - Refuse polish that hides uncertainty.
 

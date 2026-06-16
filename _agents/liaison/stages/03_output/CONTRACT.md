@@ -35,7 +35,7 @@ the OS produces a signal packet with context, need, uncertainty, and next owner.
 ## Required Checks
 
 - Is the output internal only?
-- Does Voice, Brand Guardian, Sentinel, or Librarian need review?
+- Does Voice, Steward, Sentinel, or Librarian need review?
 
 ## MUST
 
@@ -70,7 +70,7 @@ Human signal:
 ## Escalation
 
 - Route final expression to Voice.
-- Route proof/client risk to Brand Guardian / Steward.
+- Route proof/client risk to Steward.
 
 ## Exit / Handoff
 

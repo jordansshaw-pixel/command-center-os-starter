@@ -29,7 +29,7 @@ Librarian owns findability, folder naming, source pointers, and index placement.
 
 Keeper owns memory judgment and project-local memory destination.
 
-Steward / Brand Guardian owns truth, proof, refusal, correction, and public/client-facing claim boundaries.
+Steward owns truth, proof, refusal, correction, and public/client-facing claim boundaries.
 
 Warden owns live-system, credential, secret, regulated-data, legal/compliance, and external-system stops.
 
@@ -235,7 +235,7 @@ Escalate to Conductor for project status, folder naming, routing, and sequence c
 
 Escalate to Keeper/Recorder/Librarian for memory, exact record, intake packet, handoff state, and findability gaps.
 
-Escalate to Steward / Brand Guardian for truth, proof, claims, refusal, correction, public-facing meaning, or client-facing commitments.
+Escalate to Steward for truth, proof, claims, refusal, correction, public-facing meaning, or client-facing commitments.
 
 Escalate to Warden before any live-system, credential, secret, regulated-data, legal/compliance, domain, repo, automation, analytics, payment, account, form, email, CRM, or deployment movement.
 

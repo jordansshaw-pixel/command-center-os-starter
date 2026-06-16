@@ -68,7 +68,7 @@ Boundary packet:
 
 ## Acceptance Test
 
-- Output can be handed to Conductor, Sentinel, Warden, Brand Guardian, or the current session runner without re-identifying the boundary.
+- Output can be handed to Conductor, Sentinel, Warden, Steward, or the current session runner without re-identifying the boundary.
 
 ## Failure Test
 
@@ -77,7 +77,7 @@ Boundary packet:
 ## Escalation
 
 - Route hard-stop concerns to Warden.
-- Route route/destination concerns to Conductor.
+- Escalate route/destination concerns to Conductor.
 - Route risk concerns to Sentinel.
 
 ## Exit / Handoff

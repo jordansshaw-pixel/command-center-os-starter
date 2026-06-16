@@ -39,7 +39,7 @@ the OS separates symptom, cause, source gap, repair, prevention, and next owner.
 - What is symptom versus root cause?
 - What source failed?
 - What repair prevents recurrence?
-- Does Brand Guardian, Sentinel, Warden, or Conductor need review?
+- Does Steward, Sentinel, Warden, or Conductor need review?
 
 ## MUST
 
@@ -67,7 +67,7 @@ the OS separates symptom, cause, source gap, repair, prevention, and next owner.
 ## Escalation
 
 - Route risk changes to Sentinel.
-- Route truth/proof issues to Brand Guardian / Steward.
+- Route truth/proof issues to Steward.
 - Route destination uncertainty to Conductor.
 
 ## Exit / Handoff

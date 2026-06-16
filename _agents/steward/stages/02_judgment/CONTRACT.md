@@ -17,7 +17,7 @@ Apply oath, truth, proof, refusal, and correction authority.
 
 ## Output
 
-- Brand Guardian judgment.
+- Steward judgment.
 - Proof/correction/refusal decision.
 
 ## Exit

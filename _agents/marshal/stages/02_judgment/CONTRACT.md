@@ -66,7 +66,7 @@ the OS maps rule requirements to pass, fail, missing, or conflict.
 ## Escalation
 
 - Route rule conflict to Conductor or the operator.
-- Route governance conflict to Brand Guardian / Steward.
+- Route governance conflict to Steward.
 
 ## Exit / Handoff
 

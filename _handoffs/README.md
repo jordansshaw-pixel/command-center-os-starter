@@ -43,4 +43,4 @@ The project handoff state is a routing aid, not a replacement for project-local 
 
 When the receiving role is unclear, route first to Conductor.
 
-Conductor should then decide whether the next owner is Brand Guardian, Keeper, Recorder, Librarian, Sentinel, Signal, Warden, Voice, a project router, or the operator.
+Conductor should then decide whether the next owner is Steward, Keeper, Recorder, Librarian, Sentinel, Signal, Warden, Voice, a project router, or the operator.

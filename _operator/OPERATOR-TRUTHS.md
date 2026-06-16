@@ -7,8 +7,8 @@ Edition: Community / distributable starter
 
 This file is the first-class source for the operator's durable truths inside Command Center OS.
 
-Operator truth is upstream of governance. Brand Guardian / Steward inherits from this canon, then
-applies proof, refusal, and correction standards through `_governance/brand-guardian.md`.
+Operator truth is upstream of governance. Steward inherits from this canon, then
+applies proof, refusal, and correction standards through `_governance/steward.md`.
 
 Short rule:
 
@@ -62,17 +62,17 @@ These universal system invariants ship with the OS. **Add operator-specific trut
 | Judgment before automation. | Source-confirmed | `CLAUDE.md` |
 | Memory before rediscovery. | Source-confirmed | `CLAUDE.md` |
 | Routing before production. | Source-confirmed | `CLAUDE.md`, `ROUTING.md` |
-| Proof before claims. | Source-confirmed | `CLAUDE.md`, `_governance/brand-guardian.md` |
-| Correction before scale. | Source-confirmed | `CLAUDE.md`, `_governance/brand-guardian.md` |
+| Proof before claims. | Source-confirmed | `CLAUDE.md`, `_governance/steward.md` |
+| Correction before scale. | Source-confirmed | `CLAUDE.md`, `_governance/steward.md` |
 | Boundaries before live-system access. | Source-confirmed | `CLAUDE.md`, `_connectivity/` |
 | The OS improves through action, not only information. | Source-confirmed | `_routing/proactive-action-standard.md` |
 | Human-facing architecture interfaces are truth surfaces and must be updateable from a named source of truth. | Source-confirmed | `_routing/architecture-map.json` |
 | If something is queued to be built, it must be built before it is used. | Source-confirmed | this file |
-| All meaningful work must resolve into routing, memory judgment, and truth authority before it moves or is treated as complete. Conductor owns routing, Keeper owns memory judgment, and Steward / Brand Guardian owns truth authority. Librarian makes work findable but does not replace those authorities. | Source-confirmed | this file |
+| All meaningful work must resolve into routing, memory judgment, and truth authority before it moves or is treated as complete. Conductor owns routing, Keeper owns memory judgment, and Steward owns truth authority. Librarian makes work findable but does not replace those authorities. | Source-confirmed | this file |
 | Specificity in truth matters. Truth needs scope, source, owner, and approval state. | Source-confirmed | this file |
 | What is true at root may not be true for a given project unless inheritance or local truth is explicit. | Source-confirmed | this file |
 | A project dropped into a command center must carry its own findings, planning, memory, governance, connectivity, and stage truth so it can run accordingly. Root stores the operating rule, not the project's operational information. | Source-confirmed | this file |
-| AI must not turn the operator's judgment, client reality, or project identity into generic output. | Source-confirmed | `_governance/brand-guardian.md` |
+| AI must not turn the operator's judgment, client reality, or project identity into generic output. | Source-confirmed | `_governance/steward.md` |
 
 ## Operator-Specific Truths
 
@@ -85,7 +85,7 @@ Every durable truth should carry:
 
 - Scope: root, operator, governance, project, client, stage, interface, or implementation.
 - Source: file, decision log entry, operator statement, observed artifact, or external evidence.
-- Owner: the operator, Operator Canon, Brand Guardian, Conductor, project owner, or named role.
+- Owner: the operator, Operator Canon, Steward, Conductor, project owner, or named role.
 - Approval state: user-confirmed, source-confirmed, inferred, or provisional.
 
 Short rule:
@@ -101,11 +101,11 @@ Operator truth moves through the OS in this order:
 ```text
 Operator
 -> Operator Canon
--> Steward / Brand Guardian worldview
+-> Steward worldview
 -> Conductor routing discipline
 -> Sentinel risk logic
--> Signal signal structure
--> Voice voice and resonance
+-> Signal structure
+-> Voice and resonance
 -> Build-time architecture review through Conductor, Analyst, Pathfinder, Theorist, active roles, and source inspection
 -> Implementation through Builder only after Conductor routes and required review gates permit movement
 -> Project execution
@@ -135,4 +135,4 @@ Root may carry reference analysis. The project must carry what it needs to run.
 ## Review Gate
 
 If a new operator truth is inferred from behavior rather than directly confirmed, label it `Inferred`
-or `Provisional` and route it to Brand Guardian or the operator before using it as durable law.
+or `Provisional` and route it to Steward or the operator before using it as durable law.

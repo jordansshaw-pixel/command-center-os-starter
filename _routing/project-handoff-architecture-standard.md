@@ -23,7 +23,7 @@ Librarian owns project handoff findability and state indexes.
 
 Keeper owns memory judgment and required memory checks.
 
-Steward / Brand Guardian owns truth, proof, refusal, correction, and claim-boundary gates.
+Steward owns truth, proof, refusal, correction, and claim-boundary gates.
 
 Warden owns credentials, live systems, regulated data, legal/compliance exposure, and external-system hard stops.
 
@@ -183,7 +183,7 @@ Escalate to Signal for incomplete signals or handoff packets.
 
 Escalate to Keeper/Recorder/Librarian for memory, exact record, or findability gaps.
 
-Escalate to Steward / Brand Guardian for truth, proof, claim, refusal, correction, or public/client-facing meaning.
+Escalate to Steward for truth, proof, claim, refusal, correction, or public/client-facing meaning.
 
 Escalate to Warden for credentials, live systems, regulated data, legal/compliance, external systems, implementation repos, domains, DNS, automations, analytics, or client records.
 

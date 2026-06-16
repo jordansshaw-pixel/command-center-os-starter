@@ -184,7 +184,7 @@ Date: {answers.timestamp[:10]}
 - Root context: `../CONTEXT.md`
 - Root routing: `../ROUTING.md`
 - Root Operator Canon: `../_operator/`
-- Root Brand Guardian: `../_governance/brand-guardian.md`
+- Root Steward: `../_governance/steward.md`
 - Root memory: `../_memory/`
 - Root connectivity: `../_connectivity/`
 - Root project folder inheritance template: `../_routing/project-folder-inheritance-template.md`
@@ -236,7 +236,7 @@ This file records current {answers.display_name} state so work does not depend o
 
 ## Current State
 
-{answers.display_name} was created from the the OS new project intake on {answers.timestamp}.
+{answers.display_name} was created from the OS new project intake on {answers.timestamp}.
 
 ## Durable Facts
 
@@ -350,7 +350,7 @@ Stop when:
 
 Escalate to Conductor for routing and sequence.
 
-Escalate to Steward / Brand Guardian for truth, proof, claims, refusal, or correction.
+Escalate to Steward for truth, proof, claims, refusal, or correction.
 
 Escalate to Keeper/Recorder/Librarian for memory, exact record, or findability.
 
@@ -378,7 +378,7 @@ This folder carries {answers.display_name} governance that inherits from root wi
 ## Inherits
 
 - Root Operator Canon: `../../_operator/`
-- Root Brand Guardian: `../../_governance/brand-guardian.md`
+- Root Steward: `../../_governance/steward.md`
 - Root routing: `../../ROUTING.md`
 - Root memory: `../../_memory/`
 - Root connectivity: `../../_connectivity/`

@@ -63,7 +63,7 @@ the OS identifies need, signal type, uncertainty, missing question, risk, and ne
 
 ## Escalation
 
-- Route client/public risk to Sentinel and Brand Guardian / Steward.
+- Route client/public risk to Sentinel and Steward.
 
 ## Exit / Handoff
 

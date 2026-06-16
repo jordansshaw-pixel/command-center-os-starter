@@ -82,7 +82,7 @@ Build-time review MAY be skipped only when `_routing/low-risk-fast-lane-standard
 - The work does not touch live systems, credentials, client commitments, public claims, legal/compliance, or project identity.
 - Existing contracts already define the exact action.
 
-For substantial fast-lane claims, `_routing/atx_fast_lane_gate.py` SHOULD validate the declared eligibility before execution. A passing deterministic gate does not replace Conductor routing, Sentinel risk judgment, Brand Guardian truth authority, or Warden live-system stops.
+For substantial fast-lane claims, `_routing/atx_fast_lane_gate.py` SHOULD validate the declared eligibility before execution. A passing deterministic gate does not replace Conductor routing, Sentinel risk judgment, Steward truth authority, or Warden live-system stops.
 
 ## Required Review Lenses
 
@@ -109,7 +109,7 @@ Model-coherence checks MUST route through Theorist when:
 - The architecture is elegant but may be impractical.
 - A model could drift away from project, field, or operator reality.
 
-Theorist MUST NOT be invoked as a substitute for source inspection, Brand Guardian truth review, boundary checks, Sentinel risk, or Conductor routing.
+Theorist MUST NOT be invoked as a substitute for source inspection, Steward truth review, boundary checks, Sentinel risk, or Conductor routing.
 
 ## Queued Role Rule
 
@@ -141,7 +141,7 @@ the OS MUST NOT invoke, assign ownership to, route execution to, or treat as ava
 - the OS MUST NOT let Theorist own final architecture.
 - the OS MUST NOT route to any future queued role or lens when source, destination, owner, risk, boundary, folder, contract, stages, or handoff path is unclear or missing.
 - the OS MUST NOT skip build-time review merely because a build request sounds simple if it changes durable structure.
-- the OS MUST NOT treat a prototype as production truth without Sentinel risk review and required Brand Guardian or the operator approval.
+- the OS MUST NOT treat a prototype as production truth without Sentinel risk review and required Steward or the operator approval.
 - the OS MUST NOT ask the operator to name the review roles before the OS classifies the work.
 
 ## Inputs
@@ -200,7 +200,7 @@ Escalate to the operator when:
 - The model, evidence, boundary, or routing review cannot identify a safe default.
 - A new named role would be created or retired.
 
-Escalate to Brand Guardian when:
+Escalate to Steward when:
 
 - The build changes root governance, oath, truth, proof, refusal, doctrine, brand, or public meaning.
 
@@ -217,7 +217,7 @@ Conductor classify
 -> Pathfinder boundary check when safety, scope, or operating cover matters
 -> Theorist model-coherence check when abstraction or model risk matters
 -> Sentinel risk score
--> Signal signal
+-> Signal
 -> Builder build/prototype only if authorized
 -> Memory/handoff as required
 ```

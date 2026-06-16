@@ -53,12 +53,12 @@ Source improvement:
 | Memory loss or rediscovery | `_memory/MEMORY-ROUTER.md`, `_memory/memory-rules.md` |
 | Missing decision record | `_memory/decision-log.md` |
 | Claude/Codex drift | `_memory/sync-rules.md` |
-| Truth/proof/refusal issue | `_governance/brand-guardian.md` |
+| Truth/proof/refusal issue | `_governance/steward.md` |
 | Project-specific stale context | `[PROJECT]/CONTEXT.md` or `[PROJECT]/ROUTING.md` |
 | Live-system or credential boundary | `_connectivity/` |
 | Human-facing architecture interface drift | `_routing/architecture-map.json`, generator script, and affected `_output/` artifact |
 | Missing proactivity after truth surfaced | `_routing/proactive-action-standard.md`, affected source file, and `_memory/decision-log.md` |
-| Missing or thin Operator Canon | `_operator/`, `CLAUDE.md`, `ROUTING.md`, `_governance/brand-guardian.md`, affected agent contracts, and `_memory/decision-log.md` |
+| Missing or thin Operator Canon | `_operator/`, `CLAUDE.md`, `ROUTING.md`, `_governance/steward.md`, affected agent contracts, and `_memory/decision-log.md` |
 | Operator-load failure in file/reference placement | `_operator/OPERATOR-LOAD-STANDARD.md`, `_routing/destination-map.md`, `ROUTING.md`, `_agents/librarian/`, and `_memory/decision-log.md` |
 | Missing drop zone for unsorted references and artifacts | `_intake/`, `_routing/destination-map.md`, `ROUTING.md`, `_agents/librarian/`, and `_memory/decision-log.md` |
 | Loose contract language allows interpretation drift | `_routing/deterministic-contract-language-standard.md`, affected templates/contracts/tests, and `_memory/decision-log.md` |
@@ -116,7 +116,7 @@ Next owner:
 
 - Conductor for routing discipline.
 - Keeper for surfacing prior decisions.
-- Brand Guardian for governance-level correction.
+- Steward for governance-level correction.
 
 ### 2026-06-06 - Human Interface Truth Source Rule
 
@@ -167,7 +167,7 @@ Affected source files:
 Next owner:
 
 - Conductor for routing truth to action.
-- Steward / Brand Guardian for truth and correction authority.
+- Steward for truth and correction authority.
 - Keeper, Recorder, and Librarian for memory, exact record, and findability.
 
 ### 2026-06-06 - Operator Canon Source Layer
@@ -191,14 +191,14 @@ Affected source files:
 - `ROUTING.md`
 - `_routing/destination-map.md`
 - `_routing/architecture-map.json`
-- `_governance/brand-guardian.md`
+- `_governance/steward.md`
 - `_agents/steward/CONTRACT.md`
 - `_agents/voice/CONTRACT.md`
 - `_memory/decision-log.md`
 
 Next owner:
 
-- Steward / Brand Guardian for truth inheritance.
+- Steward for truth inheritance.
 - Voice for voice translation.
 - Conductor for routing and approval sequencing.
 - Librarian for findability.
@@ -303,7 +303,7 @@ Next owner:
 - Conductor for routing determinism.
 - Librarian for classification determinism.
 - Sentinel for interpretation-drift risk.
-- Brand Guardian / Steward for truth/correction halt.
+- Steward for truth/correction halt.
 
 ### 2026-06-06 - Single Intake Drop Lane
 
@@ -336,4 +336,4 @@ Next owner:
 
 Do not silently rewrite root law from a source-improvement candidate unless the correction is user-confirmed or clearly marked as provisional.
 
-When in doubt, add the candidate and route it to Brand Guardian or the operator for approval.
+When in doubt, add the candidate and route it to Steward or the operator for approval.

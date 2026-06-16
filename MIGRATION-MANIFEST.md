@@ -20,7 +20,7 @@ How this Community Edition was produced from a private workspace, and what is gu
 | `_routing/runtime/`, `_memory/runtime/` | Kept. Role names renamed; brand prose genericized. Onboarding route added + indexed. |
 | `_agents/<role>/` | Kept. Folders + references renamed to functional roles; registry validated. |
 | `_routing/` standards & templates | Kept; examples scrubbed. |
-| `_governance/brand-guardian.md`, `README.md`, roadmap | Kept; scrubbed and de-ventured; archive/reference pointers cleaned. |
+| `_governance/steward.md`, `README.md`, roadmap | Kept; scrubbed and de-ventured; archive/reference pointers cleaned. |
 | `CLAUDE.md`, `CONTEXT.md`, `AGENTS.md`, `README.md`, `ROUTING.md` | Rewritten as generic identity with operator placeholders. |
 | `_operator/*` | Behavioral standards kept (scrubbed); identity files (TRUTHS, VOICE) blanked to scaffolds; public-profile removed. |
 | `_memory/SESSION-BOOT-STATE.md` | Rewritten to fresh-install state. |

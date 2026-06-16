@@ -15,7 +15,7 @@ substantial work and route here first.
 - `_operator/OPERATOR-VOICE.md`
 - `_operator/OPERATOR-APPROVAL-STANDARD.md`
 - `_agents/keeper/doctrine/memory-relevance.md`
-- `_governance/brand-guardian.md` (only if a truth/proof boundary comes up during the interview)
+- `_governance/steward.md` (only if a truth/proof boundary comes up during the interview)
 
 ## Required Roles
 

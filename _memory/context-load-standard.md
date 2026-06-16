@@ -50,7 +50,7 @@ After Tier 0, load only the smallest relevant source set for the task type.
 | Task Signal | Load Next |
 |---|---|
 | Operator truth, load, voice, approval, judgment | Relevant `_operator/` file only |
-| Governance, proof, refusal, root law | `_governance/brand-guardian.md` and relevant governance source |
+| Governance, proof, refusal, root law | `_governance/steward.md` and relevant governance source |
 | Routing, destination, standards, handoff architecture | Relevant `_routing/` standard or contract |
 | Memory behavior or context recovery | `_memory/MEMORY-ROUTER.md`, `_memory/memory-rules.md`, or relevant memory source |
 | Decision already may exist | `_memory/decision-source-index.md`, then targeted source lookup |
@@ -138,4 +138,4 @@ This standard fails when the OS consumes major context by loading broad logs, al
 - Keeper owns memory relevance and no-load judgment.
 - Recorder owns exact records and logs as evidence stores.
 - Librarian owns compact pointers and findability.
-- Steward / Brand Guardian may require deeper source load when truth, proof, refusal, or correction is at stake.
+- Steward may require deeper source load when truth, proof, refusal, or correction is at stake.

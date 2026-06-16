@@ -25,7 +25,7 @@ Sentinel owns risk score.
 
 Signal owns fast-lane signal.
 
-Brand Guardian may stop fast-lane movement when proof, meaning, refusal, governance, or durable law is at stake.
+Steward may stop fast-lane movement when proof, meaning, refusal, governance, or durable law is at stake.
 
 ## Operator-Facing Action
 
@@ -69,7 +69,7 @@ Fast lane MAY be used only when all of these are true:
 - The action is internal-facing.
 - The action crosses no more than one authority boundary.
 - Existing contracts, standards, indexes, or source maps define the exact action and acceptance test.
-- The action does not change Operator Canon, Brand Guardian oath, approval standards, refusal authority, live-system permissions, client commitments, legal/compliance posture, financial commitments, or public claims.
+- The action does not change Operator Canon, Steward oath, approval standards, refusal authority, live-system permissions, client commitments, legal/compliance posture, financial commitments, or public claims.
 - The action does not activate a dormant or undecided project.
 - The action does not create or retire a named role.
 - The action does not touch credentials, secrets, live systems, external accounts, third-party writes, or production deployments.
@@ -93,7 +93,7 @@ Fast lane MAY be used for these classes when every eligibility condition also pa
 
 Fast lane MUST NOT be used for:
 
-- Root law, Operator Canon, Brand Guardian, approval, refusal, governance, doctrine, or role-authority changes.
+- Root law, Operator Canon, Steward, approval, refusal, governance, doctrine, or role-authority changes.
 - Project activation, project status decisions, dormant/placeholder movement, or role creation/retirement.
 - Public-facing, client-facing, legal/compliance, financial, health, regulated, or reputation-sensitive claims.
 - GitHub push, Cloudflare, DNS, CRM, GHL, forms, booking, analytics, deployment, external-account, credential, or live-system movement.
@@ -114,7 +114,7 @@ Fast lane MUST NOT be used for:
 
 - the OS MUST NOT use fast lane for live-system, credential, legal/compliance, financial, public, client-facing, or irreversible action.
 - the OS MUST NOT use fast lane to write durable root law from inference.
-- the OS MUST NOT use fast lane to skip Brand Guardian when proof, meaning, oath, refusal, doctrine, brand, or governance authority is being changed.
+- the OS MUST NOT use fast lane to skip Steward when proof, meaning, oath, refusal, doctrine, brand, or governance authority is being changed.
 - the OS MUST NOT use fast lane when project or client scope is unclear.
 - the OS MUST NOT use fast lane to create, retire, or materially redefine a named role.
 - the OS MUST NOT treat a regenerated output as source truth.
@@ -188,7 +188,7 @@ This standard fails when:
 
 ## Escalation
 
-Escalate to Brand Guardian when proof, oath, meaning, refusal, governance, doctrine, or external-facing truth is affected.
+Escalate to Steward when proof, oath, meaning, refusal, governance, doctrine, or external-facing truth is affected.
 
 Escalate to Warden when the work touches live systems, credentials, access, permissions, external accounts, or do-not-touch zones.
 

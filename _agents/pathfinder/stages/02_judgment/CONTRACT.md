@@ -70,7 +70,7 @@ the OS classifies allowed movement, forbidden movement, review gates, hard stops
 
 - Route hard-stop risk to Warden.
 - Route risk scoring to Sentinel.
-- Route truth/proof concerns to Brand Guardian / Steward.
+- Route truth/proof concerns to Steward.
 
 ## Exit / Handoff
 

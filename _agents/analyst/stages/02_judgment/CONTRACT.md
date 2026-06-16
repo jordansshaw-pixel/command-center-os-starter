@@ -38,7 +38,7 @@ the OS classifies evidence, assumptions, confidence, limitations, and downstream
 
 - Is each claim source-supported, inferred, provisional, contradicted, or unknown?
 - Is the source local OS truth, project-local truth, imported reference, external/current-world evidence, or stale/legacy material?
-- Does Brand Guardian, Sentinel, Warden, Keeper, Recorder, Librarian, or Conductor need review?
+- Does Steward, Sentinel, Warden, Keeper, Recorder, Librarian, or Conductor need review?
 
 ## MUST
 
@@ -68,9 +68,9 @@ the OS classifies evidence, assumptions, confidence, limitations, and downstream
 
 ## Escalation
 
-- Route truth/proof concerns to Brand Guardian / Steward.
+- Route truth/proof concerns to Steward.
 - Route risk concerns to Sentinel.
-- Route route/destination uncertainty to Conductor.
+- Escalate route/destination uncertainty to Conductor.
 
 ## Exit / Handoff
 

@@ -71,6 +71,6 @@ the OS hands the model-coherence packet to the next role while preserving assump
 
 ## Exit / Handoff
 
-- Next role or folder: Conductor, Analyst, Scout, Pathfinder, Sentinel, Brand Guardian / Steward, Builder after routing, or memory roles.
+- Next role or folder: Conductor, Analyst, Scout, Pathfinder, Sentinel, Steward, Builder after routing, or memory roles.
 - Signal required: handoff
 - Memory impact: none, check, write, or update-source

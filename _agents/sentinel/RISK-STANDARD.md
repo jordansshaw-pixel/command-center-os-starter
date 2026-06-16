@@ -43,8 +43,8 @@ When Sentinel is missing, the OS tends to:
 |---|---|---|---|
 | 0 | None | Internal, reversible, no meaningful truth, client, memory, or live-system risk. | Conductor may route directly. |
 | 1 | Low | Scoped internal work; easy to reverse; no durable law or external consequence. | Proceed after local instruction check. |
-| 2 | Medium | Affects project direction, durable memory, reusable rules, client context, or non-public strategic work. | Memory check plus Brand Guardian, source inspection, or project review as needed. |
-| 3 | High | External-facing, client-facing, governance-changing, financial, legal, reputation, architecture, or live-system-adjacent work. | Brand Guardian plus the operator approval before final movement. |
+| 2 | Medium | Affects project direction, durable memory, reusable rules, client context, or non-public strategic work. | Memory check plus Steward, source inspection, or project review as needed. |
+| 3 | High | External-facing, client-facing, governance-changing, financial, legal, reputation, architecture, or live-system-adjacent work. | Steward plus the operator approval before final movement. |
 | 4 | Critical | Could expose secrets, damage live systems, corrupt source truth, violate law/compliance, publish false claims, or create irreversible harm. | Stop. Warden boundary check. Escalate to the operator. |
 
 ## Risk Dimensions
@@ -67,17 +67,17 @@ Score across these dimensions. The final score is the highest serious dimension,
 
 | Trigger | Required Gate |
 |---|---|
-| Truth/proof uncertainty | Brand Guardian plus source inspection |
-| Governance, oath, doctrine, routing, memory, or agent-law change | Brand Guardian and memory write |
-| Voice, tone, brand, positioning, offer, or public expression | Brand Guardian, then Voice if expression is approved |
+| Truth/proof uncertainty | Steward plus source inspection |
+| Governance, oath, doctrine, routing, memory, or agent-law change | Steward and memory write |
+| Voice, tone, brand, positioning, offer, or public expression | Steward, then Voice if expression is approved |
 | Risk score 2 | Memory check plus relevant specialist review |
-| Risk score 3 | Brand Guardian plus the operator approval before final movement |
+| Risk score 3 | Steward plus the operator approval before final movement |
 | Risk score 4 | Stop, Warden boundary check, the operator approval |
 | Live-system touch or credential exposure | Warden, Sentinel score, the operator approval |
 | Broken process or repeated correction | Mechanic plus memory/source-improvement route |
 | Loose contract language or operator-facing ambiguity | Deterministic contract language check plus Librarian and Conductor correction |
-| Evidence gap | Source inspection plus Brand Guardian before durable claim or action |
-| Handoff or multi-role movement | Signal signal packet |
+| Evidence gap | Source inspection plus Steward before durable claim or action |
+| Handoff or multi-role movement | Signal packet |
 
 ## Routing Impact
 
@@ -87,7 +87,7 @@ Sentinel does not choose the final destination. Sentinel tells Conductor what mu
 Sentinel judges risk.
 Signal packages the risk.
 Conductor routes from the signal.
-Brand Guardian governs truth-risk.
+Steward governs truth-risk.
 Warden protects hard boundaries.
 the operator owns final approval for high-risk moves.
 ```
@@ -138,9 +138,9 @@ Reason: Durable law changes future agent behavior.
 
 Route:
 
-1. Brand Guardian review.
+1. Steward review.
 2. Decision log update.
-3. Signal signal/handoff if work continues.
+3. Signal/handoff if work continues.
 
 ### Scenario: Create Internal Draft In Project Output
 
@@ -152,7 +152,7 @@ Route:
 
 1. Load project local files.
 2. Check memory if prior project decisions matter.
-3. Proceed or request Brand Guardian review if claims become external-facing.
+3. Proceed or request Steward review if claims become external-facing.
 
 ### Scenario: Touch Website, DNS, CRM, Repo, Automation, Payments, Or Credentials
 

@@ -49,4 +49,4 @@ Role routing questions go to Conductor.
 
 Role-status findability and registry maintenance go to Librarian.
 
-Truth, proof, refusal, and visual-overclaim concerns go to Brand Guardian / Steward.
+Truth, proof, refusal, and visual-overclaim concerns go to Steward.

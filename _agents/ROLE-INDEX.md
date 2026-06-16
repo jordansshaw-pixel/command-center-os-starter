@@ -36,7 +36,7 @@ Availability is not utilization. the OS must use the invocation matrix to promot
 Before invoking or editing a role:
 
 1. Load Runtime Tier 0 (`CLAUDE.md`, `CONTEXT.md`, `SESSION-BOOT-STATE.md`, `ROUTING-KERNEL.md`, `ROUTE-INDEX.md`, `MEMORY-KERNEL.md`, `LOAD-INDEX.md`). Do not load `_memory/context-load-standard.md` by default — it is a long canonical source, not a boot file.
-2. Load `_governance/brand-guardian.md` when truth, proof, refusal, brand, voice, doctrine, or durable law is involved.
+2. Load `_governance/steward.md` when truth, proof, refusal, brand, voice, doctrine, or durable law is involved.
 3. Load `_memory/MEMORY-ROUTER.md` when memory relevance may affect role routing.
 4. Load `_memory/decision-source-index.md` or `_memory/decision-log.md` only when a specific prior decision must be checked.
 5. Load this role index.
@@ -86,7 +86,7 @@ The role-status registry MUST mark these as `active-root-operating-role` only wh
 
 | Role | Folder | Core Function | Status |
 |---|---|---|---|
-| Steward | `_agents/steward/` | Oath, Brand Guardian embodiment, truth/refusal authority | Initial contract plus stages |
+| Steward | `_agents/steward/` | Oath, Steward embodiment, truth/refusal authority | Initial contract plus stages |
 | Conductor | `_agents/conductor/` | Chief of Staff, routing, sequence, handoff | Initial contract plus stages |
 | Keeper | `_agents/keeper/` | Memory judgment and continuity | Initial contract plus stages |
 | Recorder | `_agents/recorder/` | Exact record and source trace | Initial contract plus stages |
