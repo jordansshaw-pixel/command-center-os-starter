@@ -1,5 +1,6 @@
 # Steward Doctrine: Truth, Proof, Refusal
 
+
 Status: jurisdictional doctrine
 Date: 2026-06-07
 

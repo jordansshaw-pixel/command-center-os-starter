@@ -1,5 +1,6 @@
 # Agent Stage Framework
 
+
 Status: Root agent-stage framework
 Date: 2026-06-05
 

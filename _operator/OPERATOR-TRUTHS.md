@@ -1,5 +1,6 @@
 # Operator Truths
 
+
 Status: EMPTY SCAFFOLD — populate during operator onboarding
 Edition: Community / distributable starter
 

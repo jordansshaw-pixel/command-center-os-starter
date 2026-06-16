@@ -1,5 +1,6 @@
 # Destination Map
 
+
 Status: Root destination map draft
 Date: 2026-06-05
 

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 """Deterministic gate for the OS multi-agent engagement packets.
 
 This tool validates and routes. It does not perform agent judgment.

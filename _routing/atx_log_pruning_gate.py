@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 """Deterministic enforcement detector for the OS log pruning rule.
 
 This script measures OS-owned log size against the registry thresholds and

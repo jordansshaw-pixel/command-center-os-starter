@@ -1,5 +1,6 @@
 # [Role Name] Contract
 
+
 Status: Template
 Date: 2026-06-05
 

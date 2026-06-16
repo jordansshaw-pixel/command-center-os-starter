@@ -1,5 +1,6 @@
 # Route Card: Memory Write
 
+
 Status: active runtime card
 Date: 2026-06-07
 

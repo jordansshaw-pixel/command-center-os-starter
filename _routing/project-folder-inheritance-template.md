@@ -1,5 +1,6 @@
 # Project Folder Inheritance Template
 
+
 Status: Root routing template
 Date: 2026-06-06
 

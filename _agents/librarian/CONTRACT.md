@@ -1,5 +1,6 @@
 # Librarian Contract
 
+
 Status: Initial root operating contract
 Date: 2026-06-05
 

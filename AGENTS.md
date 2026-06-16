@@ -1,5 +1,6 @@
 # AGENTS.md
 
+
 Status: Codex-facing root instruction surface
 Date: 2026-06-07
 

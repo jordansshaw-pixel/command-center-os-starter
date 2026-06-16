@@ -1,5 +1,6 @@
 # Voice Doctrine: Voice After Truth
 
+
 Status: jurisdictional doctrine
 Date: 2026-06-07
 

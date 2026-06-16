@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 """Deterministic eligibility gate for the OS low-risk fast-lane movement.
 
 This script validates declared fast-lane eligibility. It does not perform

@@ -1,5 +1,6 @@
 # Role Glossary
 
+
 Command Center OS ships with a crew of functional agent roles. Each role has a folder under
 `_agents/<role>/` with a `CONTRACT.md`, a `doctrine/` file, and a four-stage spine
 (`01_intake → 02_judgment → 03_output → 04_handoff`).

@@ -1,5 +1,6 @@
 # Claude / Codex Sync Rules
 
+
 Status: Root sync draft
 Date: 2026-06-05
 

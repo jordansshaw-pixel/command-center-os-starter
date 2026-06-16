@@ -1,5 +1,6 @@
 # Stage 02 — Judgment (Sample Project)
 
+
 Movement question: What is proven, inferred, uncertain, or blocked before output?
 
 ## Do

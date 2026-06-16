@@ -1,5 +1,6 @@
 # Command Architecture Blueprint
 
+
 Status: Root architecture blueprint draft
 Date: 2026-06-06
 

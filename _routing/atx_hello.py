@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 """Emit the deterministic the OS hello entrance response."""
 
 from __future__ import annotations

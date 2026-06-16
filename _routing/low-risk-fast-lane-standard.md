@@ -1,5 +1,6 @@
 # Low-Risk Fast Lane Standard
 
+
 Status: Root routing standard draft
 Date: 2026-06-06
 

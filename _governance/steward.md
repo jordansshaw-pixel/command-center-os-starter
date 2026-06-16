@@ -1,5 +1,6 @@
 # Steward
 
+
 Status: Root governance draft
 Date: 2026-06-05
 

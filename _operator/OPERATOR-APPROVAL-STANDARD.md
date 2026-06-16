@@ -1,5 +1,6 @@
 # Operator Approval Standard
 
+
 Status: Root Operator Canon draft
 Date: 2026-06-06
 

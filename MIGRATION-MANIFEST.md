@@ -1,5 +1,6 @@
 # Migration Manifest
 
+
 How this Community Edition was produced from a private workspace, and what is guaranteed about it.
 
 ## Guarantees

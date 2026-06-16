@@ -1,5 +1,6 @@
 # Generator Artifact Contract
 
+
 Status: Root routing standard
 Date: 2026-06-06
 

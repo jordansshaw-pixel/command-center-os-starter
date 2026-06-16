@@ -1,5 +1,6 @@
 # Memory Rules
 
+
 Status: Root memory rules draft
 Date: 2026-06-05
 
