@@ -64,6 +64,18 @@ def build_patterns():
     pats += PATH_REGEX
     return pats
 
+# Sanctioned public attributions: lines containing one of these exact substrings
+# are exempt from the denylist. Keep this list tiny and specific — it is an
+# operator-approved public credit, not a blanket allow. Any OTHER use of the
+# denylisted tokens (e.g. a bare "cliefnotes" path) is still flagged.
+ALLOW_LINE_SUBSTRINGS = [
+    "skool.com/cliefnotes",  # Jake Van Clief attribution (ICM) in LICENSE + README
+]
+
+def line_allowed(line: str) -> bool:
+    low = line.lower()
+    return any(allow in low for allow in ALLOW_LINE_SUBSTRINGS)
+
 def scan() -> int:
     pats = build_patterns()
     hits = []
@@ -82,6 +94,8 @@ def scan() -> int:
             except (UnicodeDecodeError, OSError):
                 continue
             for i, line in enumerate(lines, 1):
+                if line_allowed(line):
+                    continue
                 for token, rx in pats:
                     if rx.search(line):
                         rel = os.path.relpath(p, ROOT).replace("\\", "/")
@@ -113,6 +127,16 @@ def self_test() -> int:
         if flagged(good):
             print(f"FAIL scrub-gate self-test: false positive on '{good}'", file=sys.stderr)
             return 1
+    # the sanctioned attribution line is exempt, but the allowance stays narrow:
+    if not line_allowed("Clief Notes: https://skool.com/cliefnotes"):
+        print("FAIL scrub-gate self-test: sanctioned attribution not allowed", file=sys.stderr)
+        return 1
+    if line_allowed("internal cliefnotes workspace path"):
+        print("FAIL scrub-gate self-test: allowance too broad", file=sys.stderr)
+        return 1
+    if not flagged("cliefnotes") or not flagged("skool"):
+        print("FAIL scrub-gate self-test: token no longer guarded", file=sys.stderr)
+        return 1
     print("PASS distribution scrub gate self-test")
     return 0
 
