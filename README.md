@@ -85,7 +85,8 @@ Command Center OS stands on foundational concepts contributed by:
 
 - **Jake Van Clief** — the **Interoperable Context Methodology (ICM)**, the staged
   folder design behind the project workspaces and the four-stage agent spine.
+  [Clief Notes](https://skool.com/cliefnotes).
 - **Curtis Hays** — **Doctrine** as the foundational architecture, as described in
-  his articles.
+  his articles. [Collideascope](https://collideascope.co).
 
 See `LICENSE` for the full attribution notice.
