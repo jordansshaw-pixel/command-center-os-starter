@@ -1,4 +1,4 @@
-﻿# Log Pruning Rule
+# Log Pruning Rule
 
 Status: active runtime rule
 Date: 2026-06-07

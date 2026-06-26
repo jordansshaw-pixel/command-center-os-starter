@@ -1,4 +1,4 @@
-﻿# Log Rules
+# Log Rules
 
 
 Status: Root memory standard
