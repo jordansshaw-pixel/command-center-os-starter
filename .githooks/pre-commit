@@ -1,4 +1,4 @@
-#!/bin/sh
+﻿#!/bin/sh
 set -eu
 
 REPO_ROOT="$(git rev-parse --show-toplevel)"
@@ -84,5 +84,24 @@ if [ -n "$PRUNE_ARGS" ] && [ -f "$OS_ROOT/_routing/atx_log_pruning_gate.py" ]; t
     }
     echo "Bypass only for genuine emergencies: git commit --no-verify" >&2
     exit "$PRUNE_STATUS"
+  fi
+fi
+
+# Log freshness reminder (inverse of pruning): when this commit touches OS
+# files, check enrolled logs for staleness. This is WARN-ONLY and never blocks
+# the commit; writing the missing decision-log entry in the same commit clears
+# it. Source rule: _memory/runtime/LOG-PRUNING-RULE.md (Freshness). Owner: Recorder.
+if [ -f "$OS_ROOT/_routing/atx_log_pruning_gate.py" ]; then
+  FRESH_OUTPUT="$("$OS_PYTHON" "_routing/atx_log_pruning_gate.py" --freshness --format json 2>/dev/null || true)"
+  FRESH_NEXT="$(printf '%s' "$FRESH_OUTPUT" | "$OS_PYTHON" -c "import json, sys
+try:
+    data = json.load(sys.stdin)
+except Exception:
+    sys.exit(0)
+if data.get('status') == 'warn':
+    print(data.get('next', ''))" 2>/dev/null || true)"
+  if [ -n "$FRESH_NEXT" ]; then
+    echo "OS log freshness reminder (non-blocking):" >&2
+    echo "  $FRESH_NEXT" >&2
   fi
 fi

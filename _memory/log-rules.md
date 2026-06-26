@@ -1,4 +1,4 @@
-# Log Rules
+﻿# Log Rules
 
 
 Status: Root memory standard
@@ -74,6 +74,11 @@ Do not prune third-party, package-owned, reference, or imported changelogs unles
 Runtime pruning source:
 
 - `_memory/runtime/LOG-PRUNING-RULE.md`
+
+## Freshness Rule
+
+The inverse of pruning: an OS-owned log SHOULD NOT go silent while durable work happens. A log MAY enroll in a freshness window via `freshness.maxStaleDays` in `_memory/runtime/log-registry.json`; `_routing/atx_log_pruning_gate.py --freshness` issues a non-blocking reminder when the newest entry is older than that window. This exists because size enforcement alone can pressure agents to stop logging. See the Freshness section of `_memory/runtime/LOG-PRUNING-RULE.md`.
+
 
 ## Ownership
 

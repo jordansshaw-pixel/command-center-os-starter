@@ -1,4 +1,4 @@
-# Log Pruning Rule
+﻿# Log Pruning Rule
 
 Status: active runtime rule
 Date: 2026-06-07
@@ -55,3 +55,13 @@ Execution evidence:
 
 - `_memory/log-archive/decision-log/2026-06.md`
 - `_agents/log-archive/AGENT-RUN-LOG/2026-06.md`
+
+## Freshness (inverse rule)
+
+Pruning stops a log from growing too large. Freshness stops the opposite failure: a log going silent while real work happens. The size gate is one-directional — under size pressure alone, the path of least resistance is to stop logging, which defeats the purpose of the log.
+
+A log enrolls in the freshness check by adding `freshness.maxStaleDays` to its entry in `_memory/runtime/log-registry.json`. `_memory/decision-log.md` is enrolled at 7 days. Logs without that field are not freshness-checked.
+
+- `_routing/atx_log_pruning_gate.py --freshness` warns when an enrolled log's newest `###` entry timestamp is older than its `maxStaleDays`, or when the log is missing or unreadable. It is the deterministic mirror of the size detector and follows the same boundary: it detects only; it MUST NOT write, prune, or edit a log.
+- Freshness is **warn-only and never blocks** — a stale log returns exit 0. The local `.githooks/pre-commit` runs it as a reminder whenever a commit touches OS files; writing the missing decision-log entry in the same commit clears it.
+- Owner: Keeper confirms whether "stale" means a genuinely missing entry or a legitimately idle period; Recorder owns the entry's exact record once written.
