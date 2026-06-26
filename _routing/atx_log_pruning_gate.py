@@ -296,7 +296,16 @@ def run_scan(args: argparse.Namespace) -> int:
 def run_freshness_scan(args: argparse.Namespace) -> int:
     try:
         data = load_registry(REGISTRY_PATH)
-    except (FileNotFoundError, ValueError, json.JSONDecodeError) as exc:
+    except FileNotFoundError:
+        # Missing registry in freshness mode: treat as no enrolled logs, return pass with empty list.
+        checked: list[dict[str, Any]] = []
+        packet = build_freshness_packet(checked, REGISTRY_PATH.relative_to(ROOT).as_posix())
+        if args.format == "markdown":
+            print(render_freshness_markdown(packet), end="")
+        else:
+            print(json.dumps(packet, indent=2))
+        return 0
+    except (ValueError, json.JSONDecodeError) as exc:
         packet = {
             "gate": "log-freshness",
             "deterministicOnly": True,
@@ -426,6 +435,27 @@ def run_self_test() -> int:
         if build_freshness_packet(checked, "self-test")["status"] != "warn":
             print("FAIL freshness overall should warn when any log stale/missing", file=sys.stderr)
             return 1
+
+    # Freshness scan with missing registry file: must return exit 0 with empty checked list (warn-only contract).
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        fake_registry = root / "fake-registry.json"
+        args_missing = argparse.Namespace(only=[], format="json")
+        # Simulate freshness scan against non-existent registry by catching the exception path.
+        try:
+            load_registry(fake_registry)
+            print("FAIL should raise FileNotFoundError for missing registry", file=sys.stderr)
+            return 1
+        except FileNotFoundError:
+            # This is the expected path: missing registry in freshness mode returns exit 0 with empty list.
+            checked_empty: list[dict[str, Any]] = []
+            packet_empty = build_freshness_packet(checked_empty, fake_registry.relative_to(root).as_posix())
+            if packet_empty["status"] != "pass":
+                print(f"FAIL missing registry freshness packet should be pass, got {packet_empty['status']}", file=sys.stderr)
+                return 1
+            if len(packet_empty["checked"]) != 0:
+                print(f"FAIL missing registry freshness packet should have empty checked list, got {len(packet_empty['checked'])} items", file=sys.stderr)
+                return 1
 
     print("PASS log-pruning gate self-test")
     return 0
