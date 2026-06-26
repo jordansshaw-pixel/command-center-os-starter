@@ -1,5 +1,5 @@
 {
-  "_comment": "OS-owned logs the pruning gate watches. Add a log here to enroll it; the gate never guesses ownership. trigger=warn-and-route line count, target=post-prune ceiling, ceiling=hard-block line count. Source rule: _memory/runtime/LOG-PRUNING-RULE.md",
+  "_comment": "OS-owned logs the pruning gate watches. Add a log here to enroll it; the gate never guesses ownership. trigger=warn-and-route line count, target=post-prune ceiling, ceiling=hard-block line count. Optional freshness.maxStaleDays enrolls a log in the inverse (staleness) check: 'atx_log_pruning_gate.py --freshness' warns, non-blocking, when the newest entry is older than that many days. Source rule: _memory/runtime/LOG-PRUNING-RULE.md",
   "defaults": {
     "trigger": 300,
     "target": 200,
@@ -7,7 +7,7 @@
     "owner": "Recorder"
   },
   "logs": [
-    { "path": "_memory/decision-log.md" },
+    { "path": "_memory/decision-log.md", "freshness": { "maxStaleDays": 7 } },
     { "path": "_agents/AGENT-RUN-LOG.md" },
     { "path": "_handoffs/HANDOFF-LOG.md" }
   ]

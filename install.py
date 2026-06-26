@@ -24,6 +24,7 @@ the venture. See GUIDE.md.
 from __future__ import annotations
 
 import os
+import pathlib
 import sys
 from datetime import date
 
@@ -39,6 +40,84 @@ FIRST_RUN_BLOCKQUOTE = (
     "> (who you are, what you build, your standards, your boundaries). Until then, treat operator-specific\n"
     "> judgment as unknown and ask before assuming.\n\n"
 )
+
+# Exact text of .claude/settings.json — kept here so install.py is the single
+# setup step and a fresh clone is fully wired without manual file placement.
+HOOKS_SETTINGS = """{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python _routing/atx_hook_runner.py --event context-recovery --request \\"session start boot check\\" --format markdown"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Edit|Write|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python _routing/atx_pretooluse_adapter.py"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python _routing/atx_finalization_reminder.py"
+          }
+        ]
+      }
+    ]
+  }
+}
+"""
+
+# Exact text of .claude/settings.json -- kept here so install.py is the single
+# setup step and a fresh clone is fully wired without manual file placement.
+HOOKS_SETTINGS = r"""{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python _routing/atx_hook_runner.py --event context-recovery --request \"session start boot check\" --format markdown"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Edit|Write|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python _routing/atx_pretooluse_adapter.py"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python _routing/atx_finalization_reminder.py"
+          }
+        ]
+      }
+    ]
+  }
+}
+"""
 
 
 # ---------------------------------------------------------------- prompts ----
@@ -114,6 +193,22 @@ def replace_section(text: str, heading: str, new_body: str) -> str:
     if not result.endswith("\n"):
         result += "\n"
     return result
+
+
+# ----------------------------------------------------------- hooks helpers ----
+def ensure_hooks(root: str) -> bool:
+    """Idempotently ensure .claude/settings.json exists with enforcement hooks.
+
+    Returns True if the file was created, False if it already existed (no-op).
+    The file is written UTF-8 without BOM. An existing file is never overwritten.
+    """
+    dot_claude = os.path.join(root, ".claude")
+    settings_path = os.path.join(dot_claude, "settings.json")
+    if os.path.exists(settings_path):
+        return False
+    os.makedirs(dot_claude, exist_ok=True)
+    pathlib.Path(settings_path).write_bytes(HOOKS_SETTINGS.encode("utf-8"))
+    return True
 
 
 # ------------------------------------------------------------------ build ----
@@ -195,6 +290,23 @@ agent at creation. Root stores the lane name, not the venture's working data.
 
 Conductor owns runtime route selection. Keeper owns memory relevance. Librarian owns pointer hygiene.
 """
+
+
+# ----------------------------------------------------------- hooks helpers ----
+def ensure_hooks(root: str) -> bool:
+    """Idempotently ensure .claude/settings.json exists with enforcement hooks.
+
+    Returns True if the file was created, False if it already existed (no-op).
+    The file is written UTF-8 without BOM. An existing file is never overwritten.
+    """
+    dot_claude = os.path.join(root, ".claude")
+    settings_path = os.path.join(dot_claude, "settings.json")
+    if os.path.exists(settings_path):
+        return False
+    os.makedirs(dot_claude, exist_ok=True)
+    pathlib.Path(settings_path).write_bytes(HOOKS_SETTINGS.encode("utf-8"))
+    return True
+
 
 
 # ------------------------------------------------------------------- main ----
@@ -282,11 +394,20 @@ def main() -> int:
     except OSError:
         pass
 
+    # Ensure .claude/settings.json exists with enforcement hooks
+    hooks_created = ensure_hooks(ROOT)
+
+    # Ensure .claude/settings.json exists with enforcement hooks
+    hooks_created = ensure_hooks(ROOT)
+
     print("\n" + "=" * 64)
     print(" Onboarding complete.")
     print("=" * 64)
     print("Updated: _operator/OPERATOR-TRUTHS.md, _operator/OPERATOR-VOICE.md,")
     print("         _memory/SESSION-BOOT-STATE.md, _memory/decision-log.md")
+    print("  Enforcement hooks: .claude/settings.json (SessionStart / PreToolUse / Stop)")
+    if hooks_created:
+        print("  (hooks file was missing — created now)")
     print("\nNext steps:")
     print("  1. Verify the engine:  python _routing/run_gates.py")
     print("  2. Open the repo with your AI agent and say: 'Load Runtime Tier 0, then start.'")
