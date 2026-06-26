@@ -2,7 +2,7 @@
 
 All notable changes to Command Center OS are documented here.
 
-## [Unreleased] - 2026-06-26
+## [0.1.0] - 2026-06-26
 
 ### Added
 
