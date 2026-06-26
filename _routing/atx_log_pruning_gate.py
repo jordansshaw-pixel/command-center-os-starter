@@ -464,7 +464,7 @@ def run_self_test() -> int:
 def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Scan OS-owned logs against pruning thresholds.")
     parser.add_argument("--scan", action="store_true", help="Scan enrolled logs (default action).")
-    parser.add_argument("--only", action="append", default=[], help="Limit scan to this the OS-root-relative log path. Repeatable.")
+    parser.add_argument("--only", action="append", default=[], help="Limit scan to this OS-root-relative log path. Repeatable.")
     parser.add_argument("--format", choices=["json", "markdown"], default="json")
     parser.add_argument("--freshness", action="store_true", help="Check enrolled logs for staleness (inverse of size). Warn-only, never blocks.")
     parser.add_argument("--self-test", action="store_true", help="Run deterministic self-tests.")

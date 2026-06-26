@@ -37,3 +37,8 @@ _diagnostics/
 
 # Migration scripts (build-time only; not part of the distributed OS)
 _migration_*.py
+
+# single-use approval markers - never committed
+_routing/.pretooluse-approval
+_routing/.live-system-approval
+_routing/.sensitive-action-approval
